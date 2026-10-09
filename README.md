@@ -18,8 +18,9 @@
 6. [Checkpoints](#checkpoints)
 7. [Targets](#targets)
 8. [Career and open source](#career-and-open-source)
-9. [Resources](#resources)
-10. [Rules](#rules)
+9. [System design](#system-design)
+10. [Resources](#resources)
+11. [Rules](#rules)
 
 ---
 
@@ -40,7 +41,7 @@
 | 1. Foundations | Oct – Dec 2026 | Python, supervised ML, SQL, pandas | **P1** Tabular ML (Dec 2026) |
 | 2. Applied ML | Jan – Mar 2027 | Model selection, APIs, deployment, Git | **P2** Deployed ML app (Mar 2027) |
 | 3. Deep Learning | Apr – Jun 2027 | PyTorch, neural networks, CNNs | **P3** PyTorch model (Jun 2027) |
-| 4. AI Foundations & Algorithms | Jul – Sep 2027 | Search, uncertainty, DSA interview prep | CS50AI work + mock interviews start |
+| 4. AI Foundations & Algorithms | Jul – Sep 2027 | Search, uncertainty, DSA interview prep | **P4-pre** AI mini-project + mock interviews start |
 | 5. LLMs & RAG | Oct – Dec 2027 | Transformers, embeddings, retrieval | **P4a** Deployed RAG app (Dec 2027) |
 | 6. Agents & Portfolio | Jan – Mar 2028 | LangGraph, Docker, testing, portfolio | **P4b** Agent capstone (Mar 2028) |
 
@@ -210,7 +211,7 @@ Each phase has a goal, core resources, optional extras, a monthly checklist, and
 ### Phase 4 — AI Foundations & Algorithms
 **July – September 2027**
 
-**Goal:** Learn search, knowledge representation, probabilistic reasoning, and optimization. Build DSA interview fluency.
+**Goal:** Learn search, knowledge representation, probabilistic reasoning, and optimization. Build DSA interview fluency. Ship one small AI project so this phase produces a portfolio piece, not just coursework.
 
 **Core resources**
 - [Harvard CS50AI](https://cs50.harvard.edu/ai/) — **priority topics only:** search, knowledge representation, uncertainty, optimization. Skip ML and neural-network sections that duplicate Ng/PyTorch.
@@ -222,11 +223,17 @@ Each phase has a goal, core resources, optional extras, a monthly checklist, and
 
 **Monthly checklist**
 
-- [ ] **Jul 2027** — CS50AI search and knowledge representation. Probability and statistics review. Continue DSA.
-- [ ] **Aug 2027** — CS50AI uncertainty and optimization. Practice Python fluency (generators, decorators). Add tests to existing repos.
-- [ ] **Sep 2027** — Finish selected CS50AI projects. Write up a documented technical contribution. **Start mock interviews.**
+- [ ] **Jul 2027** — CS50AI search and knowledge representation. Probability and statistics review. Continue DSA. Pick your Phase 4 mini-project idea.
+- [ ] **Aug 2027** — CS50AI uncertainty and optimization. Practice Python fluency (generators, decorators). Add tests to existing repos. Build the core of your mini-project.
+- [ ] **Sep 2027** — Finish selected CS50AI projects. **Finish and document the mini-project.** Write up a documented technical contribution. **Start mock interviews.**
 
-**Milestone:** Clean CS50AI repos, a documented contribution, and first mock interviews.
+**Milestone:** Clean CS50AI repos, a documented AI mini-project, and first mock interviews.
+
+**Phase 4 mini-project ideas (pick one, keep it small):**
+- A constraint-satisfaction puzzle solver (Sudoku, map coloring) with a write-up on the search strategy used.
+- A Bayesian spam filter built from scratch on a public dataset, with calibration analysis.
+- An A* pathfinding visualizer with a short technical write-up.
+- A small game-playing agent (minimax with alpha-beta pruning) for a simple board game.
 
 > **Rule:** Consistent DSA matters more than finishing another course. Roughgarden's algorithms course and CS229 stay optional unless you're clearly ahead.
 
@@ -311,6 +318,7 @@ Existing SIH projects count if they meet the same standard. Don't create extra p
 | **P1** | Tabular ML | Dec 2026 | Baseline vs improved model, correct metrics, error analysis |
 | **P2** | Deployed ML app | Mar 2027 | Predictions served via Flask/FastAPI with validation, tests, dashboard, walkthrough |
 | **P3** | PyTorch model | Jun 2027 | Training from scratch, reproducibility, technical write-up |
+| **P3.5** | AI mini-project | Sep 2027 | Search / probabilistic reasoning applied to a concrete problem |
 | **P4** | RAG → agent | Dec 2027 – Mar 2028 | Retrieval evaluation, citations, tool-using agent, tests, Docker |
 
 **P1 — Tabular ML.** Train a baseline and an improved model. Include data preparation, appropriate metrics, error analysis, and limitations.
@@ -319,6 +327,8 @@ Existing SIH projects count if they meet the same standard. Don't create extra p
 *Optional idea:* customer segmentation pipeline served as a FastAPI endpoint.
 
 **P3 — PyTorch deep learning.** Train and evaluate a neural network, compare with a sensible baseline, document reproducibility. Choose image classification if you want to pair it with CS231n.
+
+**P3.5 — AI mini-project.** A small, well-documented application of classical AI: search, constraint satisfaction, or probabilistic reasoning. Must include a working implementation, a short write-up explaining the approach, and honest limitations. See [Phase 4](#phase-4--ai-foundations--algorithms) for ideas.
 
 **P4 — RAG upgraded into an agent.** Build retrieval from first principles, measure retrieval and answer quality, add sources. Then add an agent workflow, tests, logging, and Docker.
 *Optional idea:* modified GPT-2 (changed positional encoding or LR schedule), trained on a small dataset with a write-up. Only after Karpathy's Zero to Hero.
@@ -355,7 +365,7 @@ Use these to adjust scope. Don't silently carry unfinished work forward. Quarter
 | **Dec 2026** | P1 complete; Ng's course at least halfway | Drop optional reading. Protect the main course and P1. |
 | **Mar 2027** | Ng complete; P2 deployed with dashboard | Delay PyTorch up to a month. Don't skip evaluation or tests. |
 | **Jun 2027** | P3 complete and reproducible | Reduce CS50AI scope in Phase 4. Keep DSA steady. |
-| **Sep 2027** | CS50AI work documented; mock interviews and DSA review started | Narrow CS50AI to priority topics. Start mock interviews now. |
+| **Sep 2027** | CS50AI work documented; mini-project shipped; mock interviews started | Narrow CS50AI to priority topics. Ship a simpler mini-project. Start mock interviews now. |
 | **Dec 2027** | RAG deployed with a 30–50-question evaluation set | Keep the agent simple. Protect tests and RAG evaluation. |
 | **Mar 2028** | Portfolio page, resume, tracker, agent capstone ready | Prioritize reliable demos, clear explanations, applications. |
 
@@ -365,18 +375,19 @@ Use these to adjust scope. Don't silently carry unfinished work forward. Quarter
 
 | Area | Target by March 2028 |
 |---|---|
-| **Projects** | 4 evaluated projects (tabular ML, deployed ML app, PyTorch model, RAG → agent) |
+| **Projects** | 5 evaluated projects (tabular ML, deployed ML app, PyTorch model, AI mini-project, RAG → agent) |
 | **DSA** | 300+ independently solved problems, tracked by topic and explanation quality |
 | **SQL** | 150+ problems: joins, aggregation, subqueries, CTEs, window functions |
 | **Open source** | 2–4 substantive PR attempts; at least one merged or meaningfully reviewed |
 | **Mock interviews** | 10+, starting September 2027 |
+| **System design** | 5+ practiced ML system design problems with written explanations |
 | **Deployment** | Deployed RAG app with retrieval evaluation; agent with tests, logging, Docker |
 | **GitHub** | Clean repos with README, tests, reproducible setup |
 | **Career** | Updated resume, LinkedIn, portfolio page, application tracker, one write-up per project |
 
 **Two tiers of success**
-- **Core:** 3–4 strong projects you can explain and reproduce, steady DSA and SQL, at least one real contribution attempt, clear write-ups.
-- **Stretch:** 300+ DSA problems, 150+ SQL problems, multiple substantive PRs, 10+ mock interviews.
+- **Core:** 4–5 strong projects you can explain and reproduce, steady DSA and SQL, at least one real contribution attempt, clear write-ups.
+- **Stretch:** 300+ DSA problems, 150+ SQL problems, multiple substantive PRs, 10+ mock interviews, 5+ system design walkthroughs.
 
 If college or SIH makes the stretch numbers unrealistic, protect project quality and interview-level understanding instead.
 
@@ -395,6 +406,38 @@ If college or SIH makes the stretch numbers unrealistic, protect project quality
 > **About GSoC:** Selection isn't guaranteed. If you're not selected, the same work still counts — reading a real codebase, communicating with maintainers, reviewing code, making useful contributions.
 
 > **Don't wait:** You don't need to finish all 18 months before applying.
+
+---
+
+## System design
+
+ML engineer interviews increasingly include system design rounds. You don't need a full course — you need repeated practice explaining design decisions out loud and on paper.
+
+**When:** Start lightly in Phase 4 (Jul–Sep 2027), practice consistently from October 2027 onward. One problem every two weeks is enough.
+
+**Resources**
+- [Made With ML — Design](https://madewithml.com/) — ML system design patterns
+- [Chip Huyen — ML Interviews](https://huyenchip.com/ml-interviews-book/) — system design chapter and ML interview prep
+- [Grokking the Machine Learning Interview](https://www.educative.io/courses/grokking-the-machine-learning-interview) — paid, but comprehensive; use only if you need structure
+- [DataTalksClub — ML System Design interviews (YouTube)](https://www.youtube.com/@DataTalksClub) — free walkthroughs of real interview problems
+
+**Practice problems (work through these progressively)**
+1. Design a content recommendation system for a social media feed.
+2. Design a model serving infrastructure for real-time predictions with latency constraints.
+3. Design a fraud detection system for online payments.
+4. Design a feature store for a machine learning platform.
+5. Design an A/B testing framework for model rollouts.
+6. Design a search ranking system for an e-commerce platform.
+7. Design a data pipeline for training data collection and labeling.
+
+**How to practice**
+- Pick one problem. Set a 45-minute timer.
+- Write out: requirements, data sources, model choices, training pipeline, serving architecture, monitoring, and failure modes.
+- Explain it out loud as if to an interviewer.
+- Compare your design against a reference solution or video walkthrough.
+- Write a short summary of what you'd do differently next time.
+
+> **Rule:** System design practice replaces DSA time, not project time. Never sacrifice project quality for interview prep.
 
 ---
 
@@ -440,7 +483,6 @@ Links are references. Course versions and enrollment options change — check th
 | Period | Focus | Resource |
 |---|---|---|
 | Oct – Dec 2026 | Vectors, matrices, derivatives, basic probability | [Khan Academy](https://www.khanacademy.org/math) · [3Blue1Brown](https://www.3blue1brown.com/topics/linear-algebra) |
-| Oct – Dec 2026 | Discrete math and probability | [CS70 (CSDIY)](https://csdiy.wiki/数学进阶/CS70/) |
 | Jan – Mar 2027 | Linear algebra and statistics for evaluation metrics | [MIT 18.06](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/) (selected lectures) |
 | Apr – Jun 2027 | Chain rule and gradients for backpropagation | Trace gradients by hand in a small network |
 | Jul – Sep 2027 | Conditional probability and Bayes | [Harvard Stat 110](https://stat110.hsites.harvard.edu/youtube) |
@@ -448,6 +490,8 @@ Links are references. Course versions and enrollment options change — check th
 | Jan – Mar 2028 | Only what blocks your project or interview explanations | As needed |
 
 **Reference only:** [MIT 18.065](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/) · MIT 18.650 · MIT RES.6-012 — via [MIT OCW](https://ocw.mit.edu/).
+
+**Optional depth:** [UCB CS70: Discrete Math and Probability](https://csdiy.wiki/数学进阶/CS70/) — ~60 h. Only start this if you've finished the primary resources for the current phase and have spare capacity. Don't run it in parallel with Khan Academy/3Blue1Brown.
 
 Study only the lessons that address a current gap. Don't try to finish full university courses.
 
@@ -489,6 +533,7 @@ Study only the lessons that address a current gap. Don't try to finish full univ
 6. **Start mock interviews in September 2027.** Don't wait until the last month.
 7. **Reset if unsustainable.** Three weeks behind → drop to 10 hours and rebuild.
 8. **Apply on evidence.** You don't need to finish all 18 months before applying.
+9. **Practice system design from Phase 4 onward.** One problem every two weeks. Replace DSA time, not project time.
 
 ---
 
