@@ -22,7 +22,6 @@
   - [Phase 5 — LLMs and RAG](#phase-5--llms-and-rag)
   - [Phase 6 — Agents, MLOps, and Applications](#phase-6--agents-mlops-and-applications)
 - [Four-project portfolio](#four-project-portfolio)
-- [Optional project ideas](#optional-project-ideas)
 - [Resource list by purpose](#resource-list-by-purpose)
   - [Structured video roadmaps](#structured-video-roadmaps)
   - [Python, ML, and data](#python-ml-and-data)
@@ -104,7 +103,14 @@ Use **16 hours per week** as your normal target. Increase to **18 only** when co
 
 **Main resources:** [CS50P](https://cs50.harvard.edu/python/) · [Andrew Ng's ML Specialization](https://www.deeplearning.ai/specializations/machine-learning/) · [scikit-learn](https://scikit-learn.org/stable/getting_started.html)
 
+**Additional resources:**
+- [Tech With Tim — Learn Python With This ONE Project!](https://www.youtube.com/@TechWithTim) — habit-building guided build before open-ended projects.
+- [freeCodeCamp — 20 Beginner Python Projects](https://www.youtube.com/@freecodecamp) — cherry-pick 3–5 projects; do not binge.
+- [Karina Data Scientist — Watch me CLEAN DATA in Minutes with Python](https://www.youtube.com/@KarinaDataScientist) — practical, realistic data-cleaning walkthrough.
+
 **Milestone:** Finish CS50P, begin the ML Specialization, clean up GitHub, and produce a baseline tabular ML project with honest evaluation.
+
+**Optional project:** In-Memory Task & Analytics CLI Engine — builds Python depth through custom data structures; good early confidence project.
 
 | Month | Focus | Required output |
 |---|---|---|
@@ -122,7 +128,12 @@ Use **16 hours per week** as your normal target. Increase to **18 only** when co
 
 **Main resources:** [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html) · [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course/) · [Flask documentation](https://flask.palletsprojects.com/)
 
+**Additional resources:**
+- [freeCodeCamp — Python API Development](https://www.youtube.com/@freecodecamp) — FastAPI, Pydantic, CRUD, and database integration for backend work.
+
 **Milestone:** Finish the ML Specialization and turn a second project into a reproducible, tested application.
+
+**Optional project:** Customer Segmentation pipeline deployed as a FastAPI endpoint — combines classical ML with backend deployment; an alternative angle for Project 2.
 
 | Month | Focus | Required output |
 |---|---|---|
@@ -143,6 +154,8 @@ Use **16 hours per week** as your normal target. Increase to **18 only** when co
 **Main resources:** [Official PyTorch tutorials](https://pytorch.org/tutorials/) · [fast.ai](https://course.fast.ai/)
 
 **Supplements:** [Karpathy's Neural Networks: Zero to Hero](https://www.youtube.com/@AndrejKarpathy) · selected [MIT 6.S191](https://introtodeeplearning.com/) lectures
+
+**Additional resources:** None specific from the playlist; continue with the main and supplementary resources.
 
 **Milestone:** Finish a PyTorch project with a reproducible training process, evaluation, and a technical write-up.
 
@@ -168,6 +181,8 @@ Use **16 hours per week** as your normal target. Increase to **18 only** when co
 
 **Supplement:** [MIT 6.006](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/) for algorithm reasoning when needed.
 
+**Additional resources:** [Stanford Algorithms (Roughgarden)](https://www.coursera.org/learn/algorithms-part1) — optional; run in parallel only if DSA is stable. GSoC prep if relevant.
+
 **Milestone:** Complete selected AI projects, revise DSA, begin mock interviews, and pursue meaningful open-source contributions.
 
 | Month | Focus | Required output |
@@ -192,7 +207,12 @@ Use **16 hours per week** as your normal target. Increase to **18 only** when co
 
 **Supplements:** Selected [Stanford CS224N](https://web.stanford.edu/class/cs224n/) lectures · [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp) · relevant [DeepLearning.AI short courses](https://www.deeplearning.ai/short-courses/) · [pguso/rag-from-scratch](https://github.com/pguso/rag-from-scratch)
 
+**Additional resources:**
+- [Karpathy — Let's reproduce GPT-2 (124M)](https://www.youtube.com/@AndrejKarpathy) — advanced masterclass; watch last. Reproduce, modify architecture, train on a small dataset, publish a write-up.
+
 **Milestone:** Build Project 4 — a RAG application with source citations, a test dataset, retrieval evaluation, and a deployed interface.
+
+**Optional project:** Modified GPT-2 architecture — change positional encodings or LR schedule, train on a small dataset, publish a write-up. Only after Karpathy’s Zero to Hero and only if you want deeper transformer internals.
 
 | Month | Focus | Required output |
 |---|---|---|
@@ -214,9 +234,14 @@ Use **16 hours per week** as your normal target. Increase to **18 only** when co
 
 **Main resources:** [LangChain/LangGraph documentation](https://docs.langchain.com/oss/python/learn) · [Docker Get Started](https://docs.docker.com/get-started/) · [Made With ML](https://madewithml.com/)
 
-**Supplement:** [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) · [FastAPI tutorial](https://fastapi.tiangolo.com/tutorial/) · [Kun Chen — L8 Principal Building a Full Stack App with Agentic Engineering](https://www.youtube.com/@KunChen)
+**Supplement:** [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) · [FastAPI tutorial](https://fastapi.tiangolo.com/tutorial/)
+
+**Additional resources:**
+- [Kun Chen — L8 Principal Building a Full Stack App with Agentic Engineering](https://www.youtube.com/@KunChen) — full-stack agentic app integration reference.
 
 **Milestone:** Upgrade the RAG app into a tested, documented agentic system; polish your portfolio and apply for summer 2028 internships.
+
+**Optional project:** Autonomous Research Assistant (React + FastAPI + PostgreSQL + LLM, semantic memory, output validation) — a stronger, more production-shaped version of the agent capstone if you have time and want a full-stack build.
 
 | Month | Focus | Required output |
 |---|---|---|
@@ -271,19 +296,6 @@ Build retrieval from first principles, measure retrieval and answer quality, add
 
 ---
 
-## Optional project ideas
-
-These are optional alternatives or supplements. Use them only if they fill a gap or strengthen one of the four core projects. Do not add them as extra mandatory deliverables.
-
-| Project | Fits in | Why it might help |
-|---|---|---|
-| **In-Memory Task & Analytics CLI Engine** | Phase 1 | Builds Python depth through custom data structures; good early confidence project. |
-| **Customer Segmentation pipeline deployed as a FastAPI endpoint** | Phase 2 | Combines classical ML with backend deployment; an alternative angle for Project 2. |
-| **Autonomous Research Assistant** (React + FastAPI + PostgreSQL + LLM, semantic memory, output validation) | Phase 6 | A stronger, more production-shaped version of the agent capstone if you have time and want a full-stack build. |
-| **Modified GPT-2 architecture** (change positional encodings or LR schedule, train on small dataset, publish write-up) | Phase 5–6 | Advanced; only after Karpathy’s Zero to Hero and only if you want deeper transformer internals. |
-
----
-
 ## Resource list by purpose
 
 Links are provided as references, not as a claim that every course version or enrollment option has been checked live.
@@ -292,7 +304,7 @@ Links are provided as references, not as a claim that every course version or en
 
 | Resource | How to use it |
 |---|---|
-| [MASTER ROADMAP 2026–2027: Python Depth → Agentic AI](https://youtube.com/playlist?list=PLYMLIfEYAPgM) — Yogesh Kumar Singh | A faster-paced 18–24 week supplementary sequencing guide. Do **not** watch in upload order. Use it for project ideas, resource discovery, and phase sequencing — not as a replacement for this roadmap. |
+| [MASTER ROADMAP 2026–2027: Python Depth → Agentic AI](https://youtube.com/playlist?list=PLYMLIfEYAPgM) — Yogesh Kumar Singh | A faster-paced 18–24 week supplementary sequencing guide. Do **not** watch in upload order. Use it for project ideas, resource discovery, and phase sequencing — not as a replacement for this roadmap. Individual resources from it are already integrated into the phase sections above. |
 
 **Playlist phase map (for reference):**
 - **Phase 1 — Python Depth & Algorithms:** Mindset shift, project-based Python, Fluent Python concepts, Stanford Algorithms in parallel.
@@ -300,8 +312,6 @@ Links are provided as references, not as a claim that every course version or en
 - **Phase 3 — Backend & Full-Stack Agentic AI:** FastAPI, Pydantic, CRUD, full-stack agentic engineering.
 - **Phase 4 — Deep Generative AI:** PyTorch, transformers, Karpathy's GPT-2 reproduction.
 - **Ambient track:** Background programming videos for deep-work sessions.
-
-**How to use it without breaking this plan:** your roadmap's phases remain the primary spine. Use the playlist to source specific project ideas, identify gaps (FastAPI, GPT-2 reproduction), and reference the mindset video if watching is replacing building. Do not add all its videos as a separate course track.
 
 ### Python, ML, and data
 
@@ -314,9 +324,9 @@ Links are provided as references, not as a claim that every course version or en
 | [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course/) | Selected modules and exercises when you need practice. |
 | [Kaggle Learn](https://www.kaggle.com/learn) | Short Pandas and Intro to ML exercises. |
 | [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html) | Your implementation reference for classical ML. |
-| [Tech With Tim — Learn Python With This ONE Project!](https://www.youtube.com/@TechWithTim) | Optional habit-building project for Phase 1; guided build before open-ended projects. |
+| [Tech With Tim — Learn Python With This ONE Project!](https://www.youtube.com/@TechWithTim) | Optional habit-building project for Phase 1. |
 | [freeCodeCamp — 20 Beginner Python Projects](https://www.youtube.com/@freecodecamp) | Cherry-pick 3–5 projects; do not binge. |
-| [Karina Data Scientist — Watch me CLEAN DATA in Minutes with Python](https://www.youtube.com/@KarinaDataScientist) | Practical, realistic data-cleaning walkthrough for Phase 1–2. |
+| [Karina Data Scientist — Watch me CLEAN DATA in Minutes with Python](https://www.youtube.com/@KarinaDataScientist) | Practical data-cleaning walkthrough for Phase 1–2. |
 
 **ML resource rule:** Andrew Ng remains the spine. Use CampusX, StatQuest, or Google ML Crash Course only for a specific concept you cannot explain or implement yet; do not complete all of them in parallel.
 
@@ -329,8 +339,8 @@ Links are provided as references, not as a claim that every course version or en
 | [CampusX DSA](https://www.youtube.com/watch?v=f9Aje_cN_CY) | Continue your current DSA course. |
 | [NeetCode](https://neetcode.io/) | Practice interview patterns after learning the fundamentals. |
 | [GitHub Skills](https://skills.github.com/) | Learn GitHub workflows and pull requests. |
-| [Fluent Python](https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/) | Optional reference for generators, decorators, and idiomatic Python; use selected topics rather than reading the whole book on schedule. |
-| [Stanford Algorithms (Roughgarden)](https://www.coursera.org/learn/algorithms-part1) | Optional; run in parallel only if DSA is stable. GSoC prep if relevant. |
+| [Fluent Python](https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/) | Optional reference for generators, decorators, and idiomatic Python. |
+| [Stanford Algorithms (Roughgarden)](https://www.coursera.org/learn/algorithms-part1) | Optional; run in parallel only if DSA is stable. |
 | [freeCodeCamp — Python API Development](https://www.youtube.com/@freecodecamp) | FastAPI, Pydantic, CRUD, and database integration for Phase 2 and Phase 6 backend work. |
 
 Choose **one DSA course plus independent problem solving**. Don't turn DSA into another collection of playlists.
@@ -385,7 +395,7 @@ Do not try to complete entire university courses just to satisfy this schedule. 
 | [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) | Testing, deployment, and MLOps practice. |
 | [Ollama](https://ollama.com/) | Optional local model runner when your machine can handle the chosen model. |
 | [pguso/rag-from-scratch](https://github.com/pguso/rag-from-scratch) | Build RAG step by step with no black boxes. |
-| [Karpathy — Let's reproduce GPT-2 (124M)](https://www.youtube.com/@AndrejKarpathy) | Advanced masterclass; watch last. Reproduce, modify architecture, train on a small dataset, publish a write-up. |
+| [Karpathy — Let's reproduce GPT-2 (124M)](https://www.youtube.com/@AndrejKarpathy) | Advanced masterclass; watch last. |
 | [Kun Chen — L8 Principal Building a Full Stack App with Agentic Engineering](https://www.youtube.com/@KunChen) | Full-stack agentic app integration reference for Phase 6. |
 
 **DeepLearning.AI course decision:** keep the Deep Learning Specialization optional because it is primarily TensorFlow-based. Your main deep-learning implementation track remains **PyTorch**. Use short courses in the LLM phase only when they directly support the project you're building.
