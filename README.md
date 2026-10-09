@@ -1,605 +1,521 @@
 # 18-Month ML Engineer Roadmap
 
-### October 2026 – March 2028 · 16 hours/week baseline · Free-first resources
+**October 2026 → March 2028 · ~16 hours/week · Free-first resources**
 
-**Pace:** 15h minimum · 16h target · 18h stretch
+> **Goal:** Become a credible candidate for ML, AI, and software internships by showing you can **build, evaluate, deploy, and explain** real systems. Certificates alone don't count.
 
-**Goal by March 2028:** be a credible candidate for ML, AI, and software internships — not by collecting certificates, but by demonstrating that you can build, evaluate, deploy, and explain real systems. GSoC, internships, and merged PRs are targets, not promises.
-
-**Assumptions:** CS50SQL completed, CS50P nearly finished, some Python/Flask and hackathon experience, and existing SIH projects (GeM procurement, Watershed Insight).
+GSoC selection, internships, and merged PRs are **targets, not promises**.
 
 ---
 
-## Table of Contents
+## Contents
 
-- [What success looks like by March 2028](#what-success-looks-like-by-march-2028)
-- [Weekly study schedule](#weekly-study-schedule)
-- [The six-phase roadmap](#the-six-phase-roadmap)
-  - [Phase 1 — Foundations](#phase-1--foundations)
-  - [Phase 2 — Applied ML](#phase-2--applied-ml)
-  - [Phase 3 — Deep Learning](#phase-3--deep-learning)
-  - [Phase 4 — AI Foundations and Algorithms](#phase-4--ai-foundations-and-algorithms)
-  - [Phase 5 — LLMs and RAG](#phase-5--llms-and-rag)
-  - [Phase 6 — Agents, MLOps, and Applications](#phase-6--agents-mlops-and-applications)
-- [Four-project portfolio](#four-project-portfolio)
-- [Resource list by purpose](#resource-list-by-purpose)
-  - [CS自学指南 (CSDIY) resources](#cs自学指南-csdiy-resources)
-  - [Structured video roadmaps](#structured-video-roadmaps)
-  - [Python, ML, and data](#python-ml-and-data)
-  - [SQL and DSA](#sql-and-dsa)
-  - [Mathematics and statistics](#mathematics-and-statistics)
-  - [Deep learning and LLMs](#deep-learning-and-llms)
-- [Quarterly go/no-go checkpoints](#quarterly-go-no-go-checkpoints)
-- [Month-by-month execution checklist](#month-by-month-execution-checklist)
-- [Measurable targets by March 2028](#measurable-targets-by-march-2028)
-- [Career and open-source milestones](#career-and-open-source-milestones)
-- [Total effort over 18 months](#total-effort-over-18-months)
-- [Your first seven days](#your-first-seven-days)
-- [Weekly review and course-entry gates](#weekly-review-and-course-entry-gates)
-- [Final rules](#final-rules)
+1. [At a glance](#at-a-glance)
+2. [Start here: your first 7 days](#start-here-your-first-7-days)
+3. [How the plan works](#how-the-plan-works)
+4. [The six phases](#the-six-phases)
+5. [Four-project portfolio](#four-project-portfolio)
+6. [Checkpoints](#checkpoints)
+7. [Measurable targets](#measurable-targets)
+8. [Career and open-source milestones](#career-and-open-source-milestones)
+9. [Resources](#resources)
+10. [Rules](#rules)
 
 ---
 
-## What success looks like by March 2028
+## At a glance
 
-- **Four strong portfolio projects**, potentially including improved SIH projects.
-- **Practical ML experience** with scikit-learn and PyTorch.
-- **A deployed ML application** and a **RAG-to-agent system**.
-- **Consistent DSA and SQL practice.**
-- **GitHub repositories** with reproducible setup instructions, tests, evaluation, and documentation.
-- **Initial open-source contributions** and interview preparation.
-- **A polished resume, LinkedIn, GitHub profile, and internship application tracker.**
+| | |
+|---|---|
+| **Duration** | 78 weeks (Oct 2026 – Mar 2028) |
+| **Pace** | 15 h minimum · **16 h target** · 18 h stretch |
+| **Starting point** | CS50SQL done · CS50P nearly done · some Python/Flask · hackathon experience · SIH projects (GeM procurement, Watershed Insight) |
+| **You finish with** | 4 evaluated portfolio projects, a deployed ML app, a RAG-to-agent system, steady DSA/SQL practice, and a polished GitHub, resume, and LinkedIn |
 
-These are targets, not guarantees. Prioritize demonstrated ability over hitting every numerical milestone.
+### Phase overview
+
+| Phase | Months | Theme | Key output |
+|---|---|---|---|
+| **1. Foundations** | Oct – Dec 2026 | Python, supervised ML, SQL, pandas | **Project 1:** tabular ML (Dec 2026) |
+| **2. Applied ML** | Jan – Mar 2027 | Model selection, APIs, deployment, dev workflow | **Project 2:** deployed ML app (Mar 2027) |
+| **3. Deep Learning** | Apr – Jun 2027 | PyTorch, neural networks, CNNs | **Project 3:** PyTorch model (Jun 2027) |
+| **4. AI Foundations & Algorithms** | Jul – Sep 2027 | Search, uncertainty, DSA interview prep | Documented CS50AI work; mock interviews begin |
+| **5. LLMs & RAG** | Oct – Dec 2027 | Transformers, embeddings, retrieval | **Project 4a:** deployed RAG app (Dec 2027) |
+| **6. Agents, MLOps & Apps** | Jan – Mar 2028 | LangGraph, Docker, testing, portfolio | **Project 4b:** agent capstone + portfolio (Mar 2028) |
 
 ---
 
-## Weekly study schedule
+## Start here: your first 7 days
 
-Use **16 hours per week** as your normal target. Increase to **18 only** when college workload and sleep allow. Drop to **15** on lighter weeks.
+- [ ] Finish the remaining CS50P work and check your solutions.
+- [ ] Start Andrew Ng's Machine Learning Specialization and schedule your first sessions.
+- [ ] Solve 10 SQL problems and review your mistakes.
+- [ ] Clean up one GitHub repository (README, folder structure, requirements file).
+- [ ] Block your 16 weekly hours around college and other commitments.
+- [ ] Create a simple tracker for learning, DSA, projects, and applications.
+- [ ] Pick two possible GSoC organizations and read their contribution guides.
 
-| Activity | 15h | 16h | 18h |
+**Until November, focus only on:** CS50P, Andrew Ng, and your existing DSA practice. Don't start every resource in this document.
+
+---
+
+## How the plan works
+
+### Weekly schedule
+
+| Activity | 15 h | **16 h** | 18 h |
 |---|---:|---:|---:|
-| Projects and implementation | 5 | 5 | 6 |
-| Main learning track | 3 | 4 | 4 |
-| DSA and problem solving | 3 | 3 | 4 |
-| Mathematics, statistics, and SQL | 2 | 2 | 2 |
-| Testing, documentation, and review | 1 | 1 | 1 |
-| Open source and career preparation | 1 | 1 | 1 |
+| Projects and implementation | 5 | **5** | 6 |
+| Main learning track | 3 | **4** | 4 |
+| DSA and problem solving | 3 | **3** | 4 |
+| Math, statistics, and SQL | 2 | **2** | 2 |
+| Testing, documentation, and review | 1 | **1** | 1 |
+| Open source and career prep | 1 | **1** | 1 |
 | **Total** | **15** | **16** | **18** |
 
 **Example 16-hour week**
 
 | Day | Study |
 |---|---|
-| Monday | Main course 1h + DSA 1h |
-| Tuesday | Project work 2h |
-| Wednesday | DSA 1h + math/stats 1h |
-| Thursday | Main course 1h + project 1h |
-| Friday | Project 2h + testing/docs 1h |
-| Saturday | DSA 1h + open source/career 1h |
-| Sunday | Main course 2h + math/stats 1h |
+| Mon | Main course 2 h (1 h course + 1 h DSA) |
+| Tue | Project 2 h |
+| Wed | DSA 1 h + math/stats 1 h |
+| Thu | Main course 1 h + project 1 h |
+| Fri | Project 2 h + testing/docs 1 h |
+| Sat | DSA 1 h + open source/career 1 h |
+| Sun | Main course 2 h + math/stats 1 h |
 
-**Adjustment rules**
-- **Use a 15-minute Sunday review, not daily guilt:** record hours completed, what you built or solved, what slipped, the main blocker, and what moves into next week. Choose no more than three priorities for the coming week.
-- **Separate learning from output:** watching a lecture or finishing a module is progress, but a phase is only complete when its required output exists.
-- **Use a minimum viable week:** when busy, preserve a short DSA session, one main-course session, and one project session rather than trying to catch up on everything.
-- During exams or intensive hackathons, reduce extracurricular study to **3–8 hours** and resume afterward. Do not create a backlog.
-- If you fall behind for **three consecutive weeks**, temporarily reduce the target to **10 hours** and rebuild consistency.
-- If a project is late, **reduce its scope** rather than dropping evaluation, testing, or documentation.
-- Maintain **at most two major learning tracks at once, not counting DSA**. In practice, that means **one main course plus one project**; do not run multiple courses in parallel just because they are listed as resources.
-- Reserve the **final week of each quarter** (Dec, Mar, Jun, Sep) for catch-up, exam spillover, project polish, or rest. Treat May/June and December as lighter months if they coincide with your college exams; move milestones rather than creating a backlog.
-- **Python** is the default DSA language unless your college placement requirements make C++ necessary.
-- **Sleep and college come first.**
+Use **18 hours** only when college and sleep allow. Drop to **15** in lighter weeks.
+
+### Sunday review (15 minutes)
+
+1. What did I **build or solve independently** this week?
+2. What concept can I explain without notes?
+3. What is blocked, and what is the smallest next step?
+4. Which **one** task matters most next week?
+5. Did the plan fit around college and sleep?
+
+### Before starting any new course
+
+Only add a course if **all three** are true:
+1. It fills a **named gap** in the current phase.
+2. You know the **exact module** you need.
+3. You will apply it to a project or problem **within two weeks**.
+
+If any answer is no, save the link for later.
+
+### When life gets busy
+
+| Situation | What to do |
+|---|---|
+| Exams, SIH, or hackathons | Drop to **3–8 hours/week**. Don't create a backlog. |
+| Minimum viable week | Keep one DSA session, one course session, and one project session. |
+| Project running late | **Cut scope**, not testing, evaluation, or documentation. |
+| Three weeks in a row behind | Drop to **10 hours/week** for a while, then rebuild. |
+| Heavy exam month (e.g., May/June, December) | Treat it as lighter. Move milestones instead of catching up. |
+| Quarter-end weeks (Dec, Mar, Jun, Sep) | Use as buffer for catch-up, polish, or rest. |
+
+**Learning rule:** Watching a lecture is progress, but a phase is complete only when its **required output** exists.
+
+**Track rule:** Run **one main course + one project** at a time, plus DSA. Don't run several courses in parallel.
+
+**Language rule:** Python is the default for DSA unless your placement requirements need C++.
 
 ---
 
-## The six-phase roadmap
+## The six phases
+
+Each phase lists its goal, core resources, optional extras, and a monthly checklist. Tick the items as you finish them.
+
+---
 
 ### Phase 1 — Foundations
+**October – December 2026**
 
-**October–December 2026**
+**Goal:** Build Python fluency, learn supervised ML, and refresh SQL, NumPy, pandas, and basic statistics.
 
-**Focus:** Python, supervised ML, SQL, NumPy, pandas, and basic statistics.
+**Core resources**
+- [CS50P](https://cs50.harvard.edu/python/) — finish Python foundations
+- [Andrew Ng's ML Specialization](https://www.deeplearning.ai/specializations/machine-learning/) — your main ML course
+- [scikit-learn Getting Started](https://scikit-learn.org/stable/getting_started.html)
 
-**Main resources:** [CS50P](https://cs50.harvard.edu/python/) · [Andrew Ng's ML Specialization](https://www.deeplearning.ai/specializations/machine-learning/) · [scikit-learn](https://scikit-learn.org/stable/getting_started.html)
+**Optional extras (pick at most one or two)**
+- [Tech With Tim — Learn Python With This ONE Project!](https://www.youtube.com/@TechWithTim) — a guided first project
+- [freeCodeCamp — 20 Beginner Python Projects](https://www.youtube.com/@freecodecamp) — choose 3–5, not all
+- [Karina Data Scientist — Clean Data in Minutes with Python](https://www.youtube.com/@KarinaDataScientist) — practical data cleaning
+- [UCB CS70: Discrete Math and Probability](https://csdiy.wiki/数学进阶/CS70/) — probability and discrete math with algorithmic applications (~60 h)
 
-**Additional resources:**
-- [Tech With Tim — Learn Python With This ONE Project!](https://www.youtube.com/@TechWithTim) — habit-building guided build before open-ended projects.
-- [freeCodeCamp — 20 Beginner Python Projects](https://www.youtube.com/@freecodecamp) — cherry-pick 3–5 projects; do not binge.
-- [Karina Data Scientist — Watch me CLEAN DATA in Minutes with Python](https://www.youtube.com/@KarinaDataScientist) — practical, realistic data-cleaning walkthrough.
+**Monthly checklist**
+- [ ] **Oct 2026** — Finish CS50P. Start Ng's course. Clean up GitHub. Solve 20 SQL problems. Pick a small Python project.
+- [ ] **Nov 2026** — Study regression, classification, and gradient descent. Practice NumPy and pandas. Start Project 1. Read two GSoC organization guides. Make one useful open-source interaction (an issue comment or question).
+- [ ] **Dec 2026** — **Finish Project 1** (see [Portfolio](#four-project-portfolio)). Reach 75 cumulative SQL problems. Protect exam time.
 
-**CSDIY resources:**
-- **[Coursera: Machine Learning (Andrew Ng)](https://csdiy.wiki/机器学习/ML/)** — csdiy.wiki's entry for the same course you're already taking; useful for course structure and community notes. ~100 hours, Python, Stanford.[reference:0]
-- **[UCB CS70: Discrete Math and Probability Theory](https://csdiy.wiki/数学进阶/CS70/)** — fills your probability and discrete math gap with direct algorithmic applications (logic → stable matching, graph theory → network topology, probability → hashing and load balancing). ~60 hours.[reference:1]
-
-**Milestone:** Finish CS50P, begin the ML Specialization, clean up GitHub, and produce a baseline tabular ML project with honest evaluation.
-
-**Optional project:** In-Memory Task & Analytics CLI Engine — builds Python depth through custom data structures; good early confidence project.
-
-| Month | Focus | Required output |
-|---|---|---|
-| **Oct 2026** | Finish CS50P. Start Ng ML. Clean GitHub. Review Python and SQL. | CS50P completed. Small independent Python project. 20 SQL problems. |
-| **Nov 2026** | Regression, classification, gradient descent. NumPy/Pandas. Data cleaning. Read 2 GSoC orgs. | First Kaggle notebook. 50 cumulative SQL problems. Project 1 started. One useful open-source interaction. |
-| **Dec 2026** | Supervised learning, evaluation, statistics basics. Protect exams. | **Project 1 done:** tabular ML with baseline vs improved model, README, limitations, error analysis. 75 cumulative SQL problems. |
+**Milestone:** CS50P complete, Ng's course underway, a baseline tabular ML project with honest evaluation.
 
 ---
 
 ### Phase 2 — Applied ML
+**January – March 2027**
 
-**January–March 2027**
+**Goal:** Move from notebooks to tested, deployable applications. Learn model selection, cross-validation, leakage prevention, Flask/FastAPI, Git workflow, Linux, virtual environments, and experiment tracking.
 
-**Focus:** Model selection, ensembles, cross-validation, data leakage, hyperparameter tuning, Flask APIs, testing, deployment, and professional developer workflow: Git branches/commits/PRs, Linux command line, virtual environments, Jupyter notebooks, and basic experiment tracking with either MLflow or Weights & Biases (choose one).
+**Core resources**
+- [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html)
+- [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course/) — selected modules when needed
+- [Flask documentation](https://flask.palletsprojects.com/)
 
-**Main resources:** [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html) · [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course/) · [Flask documentation](https://flask.palletsprojects.com/)
+**Optional extras**
+- [freeCodeCamp — Python API Development](https://www.youtube.com/@freecodecamp) — FastAPI, Pydantic, and database integration
+- [CS229: Machine Learning (Stanford)](https://csdiy.wiki/机器学习/CS229/) — math-heavy ML, ~100 h. **Only if you want algorithm internals.**
+- [CMU 15-445: Database Systems](https://csdiy.wiki/数据库系统/15445/) — database internals, ~100 h, needs C++. **Only if you want deep backend work.**
 
-**Additional resources:**
-- [freeCodeCamp — Python API Development](https://www.youtube.com/@freecodecamp) — FastAPI, Pydantic, CRUD, and database integration for backend work.
+**Monthly checklist**
+- [ ] **Jan 2027** — Study ensembles, cross-validation, leakage, and tuning. Start Project 2. Begin timed DSA practice. Attempt a first small open-source PR.
+- [ ] **Feb 2027** — Build a Flask/FastAPI interface and add tests. Learn Git branches, PRs, Linux, and virtual environments. Draft your resume. Reach 100 cumulative SQL problems.
+- [ ] **Mar 2027** — Finish Ng's course. **Deploy Project 2.** Add a dashboard (Plotly, Streamlit, Power BI, or Tableau) and a 20-minute walkthrough to Project 1 or 2. Check official GSoC dates.
 
-**CSDIY resources:**
-- **[CS229: Machine Learning (Stanford)](https://csdiy.wiki/机器学习/CS229/)** — the graduate-level, math-heavy version of ML. You already have this listed as optional; csdiy.wiki confirms it requires strong math background and is best for those who want to understand algorithm internals rather than just use libraries. ~100 hours.[reference:2]
-- **[CMU 15-445: Database Systems](https://csdiy.wiki/数据库系统/15445/)** — if you want to deeply understand what happens under the hood of SQL databases. Covers buffer pool management, B+ tree indexes, query executors/optimizer, and concurrency control through four hands-on projects on the Bustub relational database. Requires C++ and data structures. ~100 hours. **Use only if you want backend depth beyond SQL practice.**[reference:3]
+**Choose one experiment tracker:** MLflow or Weights & Biases.
 
-**Milestone:** Finish the ML Specialization and turn a second project into a reproducible, tested application.
+**Milestone:** Ng's course complete. Project 2 is tested, documented, and deployed.
 
-**Optional project:** Customer Segmentation pipeline deployed as a FastAPI endpoint — combines classical ML with backend deployment; an alternative angle for Project 2.
-
-| Month | Focus | Required output |
-|---|---|---|
-| **Jan 2027** | Ensembles, cross-validation, leakage, tuning. Begin timed DSA. | Project 1 error analysis. Project 2 started. First small open-source PR attempt. |
-| **Feb 2027** | Unsupervised learning. Flask API + UI. Git/Linux/environment workflow. Resume and LinkedIn. | Project 2 working locally. Resume draft. GSoC proposal outline if relevant. 100 cumulative SQL problems. |
-| **Mar 2027** | Finish Ng ML. Test and deploy Project 2. Build a small data-analysis dashboard. Check official GSoC dates. | **Project 2 deployed:** ML app with documented evaluation, tests, and setup instructions. Add a dashboard to Project 1 or 2 using Power BI, Tableau, Plotly, or Streamlit, plus a concise 20-minute walkthrough explaining the insights. Internship applications started as practice. |
-
-**Career note:** Summer 2027 is a stretch; prepare for stronger summer 2028 applications. If no internship arrives, use the break for a small remote/local project, a focused hackathon, or a meaningful open-source contribution — ideally work that strengthens an existing portfolio project.
+**Career note:** Summer 2027 is a stretch. Prepare for stronger applications in summer 2028. If no internship comes, use the break for a small project, a hackathon, or a meaningful open-source contribution.
 
 ---
 
 ### Phase 3 — Deep Learning
+**April – June 2027**
 
-**April–June 2027**
+**Goal:** Understand tensors, autograd, training loops, optimizers, and regularization, then train a CNN or text classifier.
 
-**Focus:** Tensors, autograd, neural networks, training loops, optimizers, regularization, and a CNN or text classifier.
+**Core resources**
+- [Official PyTorch Tutorials](https://pytorch.org/tutorials/) — your main implementation track
+- [fast.ai](https://course.fast.ai/) — practical, project-first deep learning
 
-**Main resources:** [Official PyTorch tutorials](https://pytorch.org/tutorials/) · [fast.ai](https://course.fast.ai/)
+**Optional extras**
+- [Karpathy — Neural Networks: Zero to Hero](https://www.youtube.com/@AndrejKarpathy) — build networks by hand
+- Selected lectures from [MIT 6.S191](https://introtodeeplearning.com/)
+- [CS231n: CNNs for Visual Recognition (Stanford)](https://csdiy.wiki/深度学习/CS231/) — ~80 h. **Good companion if Project 3 is image-based.**
 
-**Supplements:** [Karpathy's Neural Networks: Zero to Hero](https://www.youtube.com/@AndrejKarpathy) · selected [MIT 6.S191](https://introtodeeplearning.com/) lectures
+**Monthly checklist**
+- [ ] **Apr 2027** — Learn tensors, autograd, `nn.Module`, and training loops. Train a small network independently. Start Project 3. Submit GSoC if applying.
+- [ ] **May 2027** — Study optimizers, regularization, and CNNs or text classification. Build a baseline and log experiments.
+- [ ] **Jun 2027** — **Finish Project 3.** Compare results, inspect errors, and document reproducibility.
 
-**CSDIY resources:**
-- **[CS231n: CNN for Visual Recognition (Stanford)](https://csdiy.wiki/深度学习/CS231/)** — the canonical computer vision course by Fei-Fei Li. Covers CNN architectures, training, and visual recognition. ~80 hours, Python. **Strong fit for your Project 3 if you choose an image classification task.**[reference:4]
+**Milestone:** A PyTorch project with a reproducible training process, evaluation, and a short technical write-up.
 
-**Milestone:** Finish a PyTorch project with a reproducible training process, evaluation, and a technical write-up.
-
-| Month | Focus | Required output |
-|---|---|---|
-| **Apr 2027** | PyTorch tensors, autograd, modules, training loops. GSoC submission if going for it. | Small neural network trained and evaluated independently. Project 3 started. |
-| **May 2027** | Optimizers, regularization, CNNs or text classification. | Prototype with a baseline and documented experiments. |
-| **Jun 2027** | Finish Project 3. Compare results. Inspect errors. Document reproducibility. | **Project 3 done:** PyTorch project with reproducible evaluation report and short technical write-up. |
-
-**Course clarification:** Andrew Ng's Machine Learning Specialization is separate from the Deep Learning Specialization. Keep the Deep Learning Specialization optional and **check its current syllabus and framework** before committing. PyTorch remains your main implementation track; do not add another course unless it fills a specific gap.
-
-**Compute note:** use Google Colab or Kaggle notebooks for occasional free GPU access where available. Save checkpoints, keep datasets small enough to reproduce, and do not make a paid GPU or paid API a requirement for finishing the project.
-
----
-
-### Phase 4 — AI Foundations and Algorithms
-
-**July–September 2027**
-
-**Focus:** Search, knowledge representation, uncertainty, optimization, probability, and DSA interview patterns.
-
-**Main resource:** [Harvard CS50AI](https://cs50.harvard.edu/ai/) — using selected topics and their associated projects.
-
-**Supplement:** [MIT 6.006](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/) for algorithm reasoning when needed.
-
-**CSDIY resources:**
-- **[CS61B: Data Structures and Algorithms (UC Berkeley)](https://csdiy.wiki/数据结构与算法/CS61B/)** — the gold-standard data structures course. 14 labs, 10 homeworks, and 3 projects with thousands of lines of engineering code. Java-based, with autograder access through Gradescope. ~60 hours. **Use this as the structured backbone for your DSA practice in this phase.**[reference:5]
-- **[MIT 6.006: Introduction to Algorithms](https://csdiy.wiki/数据结构与算法/6.006/)** — MIT's algorithms course; Python-friendly, good complement if you prefer Python over Java for algorithms.[reference:6]
-- **[CS285: Deep Reinforcement Learning (UC Berkeley)](https://csdiy.wiki/深度强化学习/CS285/)** — optional; only if you develop a specific interest in RL after CS50AI. Not required for your target roles.
-
-**Milestone:** Complete selected AI projects, revise DSA, begin mock interviews, and pursue meaningful open-source contributions.
-
-| Month | Focus | Required output |
-|---|---|---|
-| **Jul 2027** | CS50AI search and knowledge representation. Probability and statistics. Continued DSA. | 1–2 completed CS50AI projects. |
-| **Aug 2027** | CS50AI uncertainty and optimization. Fluent Python: generators, decorators. | Additional CS50AI projects with tests and explanations. |
-| **Sep 2027** | Finish selected CS50AI. Interview-style DSA. Write up OSS/hackathon/internship work. Begin mock interviews. | Clean CS50AI repos. Documented technical contribution. First mock interviews. |
-
-**CS50AI rule:** prioritize search, knowledge representation, uncertainty, and optimization. Skip or skim ML and neural-network sections that duplicate Ng/PyTorch.
-
-**Roughgarden / CS229:** optional only if clearly ahead. Continuous DSA practice matters more than completing another course.
+**Notes**
+- Andrew Ng's *Machine Learning* Specialization is different from his *Deep Learning* Specialization. The Deep Learning Specialization is optional and has historically used TensorFlow, so check its current syllabus before starting.
+- **Compute:** Use Google Colab or Kaggle for free GPU access. Save checkpoints. Keep datasets small enough to reproduce. Don't make paid GPUs or paid APIs a requirement.
 
 ---
 
-### Phase 5 — LLMs and RAG
+### Phase 4 — AI Foundations & Algorithms
+**July – September 2027**
 
-**October–December 2027**
+**Goal:** Learn search, knowledge representation, probabilistic reasoning, and optimization. Build DSA interview fluency.
 
-**Focus:** Tokenization, embeddings, transformers, pretrained models, retrieval, chunking, and grounded answers.
+**Core resources**
+- [Harvard CS50AI](https://cs50.harvard.edu/ai/) — **priority topics only:** search, knowledge representation, uncertainty, and optimization. Skip or skim ML and neural-network sections that duplicate Ng and PyTorch.
+- [CS61B: Data Structures and Algorithms (UC Berkeley)](https://csdiy.wiki/数据结构与算法/CS61B/) — structured DSA backbone (~60 h, Java, labs and projects)
 
-**Main resources:** [Hugging Face LLM Course](https://huggingface.co/learn/llm-course) · [LangChain learning resources](https://docs.langchain.com/oss/python/learn)
+**Optional extras**
+- [MIT 6.006: Introduction to Algorithms](https://csdiy.wiki/数据结构与算法/6.006/) — Python-friendly alternative to CS61B
+- [CS285: Deep Reinforcement Learning (UC Berkeley)](https://rail.eecs.berkeley.edu/deeprlcourse/) — only if you develop a specific RL interest. **Not required for target roles.**
 
-**Supplements:** Selected [Stanford CS224N](https://web.stanford.edu/class/cs224n/) lectures · [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp) · relevant [DeepLearning.AI short courses](https://www.deeplearning.ai/short-courses/) · [pguso/rag-from-scratch](https://github.com/pguso/rag-from-scratch)
+**Monthly checklist**
+- [ ] **Jul 2027** — CS50AI search and knowledge representation. Probability and statistics review. Continue DSA.
+- [ ] **Aug 2027** — CS50AI uncertainty and optimization. Practice Python fluency (generators, decorators). Add tests to existing repos.
+- [ ] **Sep 2027** — Finish selected CS50AI projects. Write up a documented technical contribution. **Start mock interviews.**
 
-**Additional resources:**
-- [Karpathy — Let's reproduce GPT-2 (124M)](https://www.youtube.com/@AndrejKarpathy) — advanced masterclass; watch last. Reproduce, modify architecture, train on a small dataset, publish a write-up.
+**Milestone:** Clean CS50AI repos, a documented contribution, and the first mock interviews.
 
-**CSDIY resources:**
-- **[CS224n: Natural Language Processing with Deep Learning (Stanford)](https://csdiy.wiki/自然语言处理/CS224n/)** — the standard NLP course for deep learning. Covers word vectors, RNNs, attention, transformers, and pretraining. Selected lectures align with your RAG phase. ~80–100 hours.[reference:7]
-- **[CS336: Language Modeling from Scratch (Stanford)](https://csdiy.wiki/深度生成模型/roadmap/)** — LLM course that emphasizes writing model architecture and training code yourself. Advanced; use selected lectures if you want deeper LLM internals.[reference:8]
-- **[MIT 6.S184: Introduction to Flow Matching and Diffusion Models](https://csdiy.wiki/深度生成模型/MIT6.S184/)** — optional; only if you develop interest in diffusion models for generative AI. Not required for RAG or agentic AI roles.[reference:9]
-
-**Milestone:** Build Project 4 — a RAG application with source citations, a test dataset, retrieval evaluation, and a deployed interface.
-
-**Optional project:** Modified GPT-2 architecture — change positional encodings or LR schedule, train on a small dataset, publish a write-up. Only after Karpathy’s Zero to Hero and only if you want deeper transformer internals.
-
-| Month | Focus | Required output |
-|---|---|---|
-| **Oct 2027** | Transformers, tokenization, embeddings, pretrained models, basic LLM inference. | Small LLM experiment with written explanation of the pipeline. |
-| **Nov 2027** | Build RAG from scratch: parsing, chunking, embeddings, retrieval, grounded answers. Then explore LangChain. | Raw RAG pipeline + initial evaluation set. 150 cumulative SQL problems. |
-| **Dec 2027** | Rebuild with LangChain where helpful. Add tests, Flask/FastAPI interface, deployment, evaluation. | **Project 4 done:** deployed RAG app with source references and measured retrieval quality. |
-
-**RAG standard:** measure retrieval and answer quality. Start with a hand-built set of **30–50 questions**, each paired with expected source documents or passages. Report a simple retrieval hit rate (whether an expected source appears in the retrieved results), inspect answer faithfulness/relevance, and log failure cases. A framework such as RAGAS can be added later; it is not a substitute for understanding your test set. A working chatbot alone does not count as a complete RAG project.
-
-**Compute and cost note:** prefer small open-weight models, local inference with [Ollama](https://ollama.com/) where your hardware supports it, or free-tier notebooks/services where available. Design a fallback path so API credits, rate limits, or a GPU shortage do not block the project. Never commit API keys to GitHub.
+**Rule:** Continuous DSA practice matters more than finishing another course. Roughgarden's algorithms course and CS229 stay optional unless you're clearly ahead.
 
 ---
 
-### Phase 6 — Agents, MLOps, and Applications
+### Phase 5 — LLMs & RAG
+**October – December 2027**
 
-**January–March 2028**
+**Goal:** Understand tokenization, embeddings, transformers, and pretrained models. Build retrieval-augmented generation (RAG) that gives grounded, sourced answers and is **measured**.
 
-**Focus:** LangGraph state and routing, tool calling, Docker, logging, testing, monitoring, and deployment.
+**Core resources**
+- [Hugging Face LLM Course](https://huggingface.co/learn/llm-course)
+- [LangChain Learning Resources](https://docs.langchain.com/oss/python/learn) — used after building RAG from scratch
+- [pguso/rag-from-scratch](https://github.com/pguso/rag-from-scratch) — step-by-step RAG with no black boxes
 
-**Main resources:** [LangChain/LangGraph documentation](https://docs.langchain.com/oss/python/learn) · [Docker Get Started](https://docs.docker.com/get-started/) · [Made With ML](https://madewithml.com/)
+**Optional extras**
+- [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp) — project-first RAG path
+- Selected lectures from [Stanford CS224N](https://web.stanford.edu/class/cs224n/) (~80–100 h for the full course)
+- Relevant [DeepLearning.AI short courses](https://www.deeplearning.ai/short-courses/) — only when they directly support your project
+- [Karpathy — Let's reproduce GPT-2 (124M)](https://www.youtube.com/@AndrejKarpathy) — **advanced; watch last**
+- [CS336: Language Modeling from Scratch](https://csdiy.wiki/深度生成模型/roadmap/) — advanced LLM internals (~100 h+)
+- [MIT 6.S184: Flow Matching and Diffusion](https://csdiy.wiki/深度生成模型/MIT6.S184/) — **only if you're interested in diffusion models**
 
-**Supplement:** [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) · [FastAPI tutorial](https://fastapi.tiangolo.com/tutorial/)
+**Monthly checklist**
+- [ ] **Oct 2027** — Study transformers, tokenization, embeddings, and pretrained models. Run a small LLM experiment and explain the pipeline in writing.
+- [ ] **Nov 2027** — Build raw RAG: parsing, chunking, embeddings, retrieval, grounded answers. Create your evaluation set. Reach 150 cumulative SQL problems.
+- [ ] **Dec 2027** — Add LangChain where it helps. Add tests, an API/UI, and deployment. **Finish Project 4a.**
 
-**Additional resources:**
-- [Kun Chen — L8 Principal Building a Full Stack App with Agentic Engineering](https://www.youtube.com/@KunChen) — full-stack agentic app integration reference.
+**Milestone:** A deployed RAG app with source citations and measured retrieval quality.
 
-**CSDIY resources:**
-- **[Full Stack Open](https://csdiy.wiki/Web开发/fullstackopen/)** — free course on modern JavaScript-based web development covering React, Redux, Node.js, MongoDB, GraphQL, and TypeScript. **Useful if you want to build a full-stack interface for your agent capstone**, moving beyond a simple Flask UI. This is the same stack referenced in the "Autonomous Research Assistant" optional project below.[reference:10]
-- **[CMU 15-445: Database Systems](https://csdiy.wiki/数据库系统/15445/)** — if you want production-grade backend depth for your agent system, especially if you choose the full-stack capstone with PostgreSQL. See Phase 2 for details.
+**RAG evaluation standard**
+- Write **30–50 questions**, each paired with the expected source document or passage.
+- Report a **retrieval hit rate**: how often the expected source appears in the top results.
+- Inspect **answer faithfulness and relevance** by hand, and log failure cases.
+- RAGAS can be added later, but it doesn't replace understanding your test set.
+- A working chatbot alone does not count as a complete RAG project.
 
-**Milestone:** Upgrade the RAG app into a tested, documented agentic system; polish your portfolio and apply for summer 2028 internships.
+**Compute:** Prefer small open-weight models, local inference with [Ollama](https://ollama.com/) when your hardware allows, or free-tier services. Plan a fallback so API limits or GPU shortages don't block you. **Never commit API keys.**
 
-**Optional project:** Autonomous Research Assistant (React + FastAPI + PostgreSQL + LLM, semantic memory, output validation) — a stronger, more production-shaped version of the agent capstone if you have time and want a full-stack build.
+---
 
-| Month | Focus | Required output |
-|---|---|---|
-| **Jan 2028** | LangGraph state, nodes, edges, conditional routing, tool calls. Docker basics. | Small stateful agent with limited, well-defined tools. |
-| **Feb 2028** | Upgrade RAG into an agent. Tests, logging, monitoring, basic MLOps. | Tested agent capstone with documented architecture and evaluation. 10+ cumulative mock interviews. |
-| **Mar 2028** | Polish portfolio. Revise ML, SQL, Python, DSA. Continue mock interviews. Apply for summer 2028 internships. Consider GSoC 2028. | Final portfolio, updated resume, application tracker. |
+### Phase 6 — Agents, MLOps & Applications
+**January – March 2028**
 
-**Agent capstone rule:** a reliable, evaluated agent beats a complicated multi-agent system. Add human approval or restricted tool access where actions have meaningful consequences.
+**Goal:** Turn the RAG app into a tested, documented, observable agent system, then polish the whole portfolio.
 
-**If you consistently hit 18 hours:** pull the LangGraph capstone into December 2027 and use January–March for open source, interview prep, or optional advanced study — not for adding courses.
+**Core resources**
+- [LangChain / LangGraph Documentation](https://docs.langchain.com/oss/python/learn) — state, nodes, edges, conditional routing, tool calls
+- [Docker — Get Started](https://docs.docker.com/get-started/)
+- [Made With ML](https://madewithml.com/) — testing, deployment, and monitoring
+
+**Optional extras**
+- [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp)
+- [FastAPI Tutorial](https://fastapi.tiangolo.com/tutorial/)
+- [Full Stack Open](https://csdiy.wiki/Web开发/fullstackopen/) — React, Node.js, GraphQL. **For a full-stack agent interface.**
+- [Kun Chen — Building a Full Stack App with Agentic Engineering](https://www.youtube.com/@KunChen) — full-stack agentic reference
+- Optional big capstone: **Autonomous Research Assistant** (React + FastAPI + PostgreSQL + LLM). Only if you have time after the core agent works.
+
+**Monthly checklist**
+- [ ] **Jan 2028** — Learn LangGraph basics. Build a small stateful agent with limited, well-defined tools. Learn Docker basics.
+- [ ] **Feb 2028** — Upgrade RAG into an agent. Add tests, logging, and basic monitoring. Document architecture and evaluation. Reach 10 cumulative mock interviews.
+- [ ] **Mar 2028** — **Finish Project 4b.** Polish all four projects. Revise Python, ML, SQL, and DSA. Update your resume and tracker. Apply for summer 2028 internships.
+
+**Milestone:** A tested, documented agent capstone and a polished portfolio.
+
+**Agent rules**
+- A reliable, evaluated agent beats a complicated multi-agent system.
+- Restrict tool access and require human approval for actions with real consequences.
+
+**If you consistently hit 18 hours:** Move the LangGraph capstone into December 2027. Use January–March for open source, interview prep, or optional depth. Don't add new courses.
 
 ---
 
 ## Four-project portfolio
 
-The four projects do not need to be completely new. A substantial SIH project can count if it meets the same quality standard.
+Existing SIH projects can count if they meet the same standard. Don't create extra projects just to hit a number.
+
+| # | Project | Due | What it proves |
+|---|---|---|---|
+| **1** | **Tabular ML** | Dec 2026 | Baseline vs improved model, correct metrics, error analysis |
+| **2** | **Deployed ML app** | Mar 2027 | Serving predictions via Flask/FastAPI, validation, tests, dashboard, walkthrough |
+| **3** | **PyTorch model** | Jun 2027 | Training from scratch, reproducibility, technical write-up |
+| **4** | **RAG → agent** | Dec 2027 – Mar 2028 | Retrieval evaluation, source citations, tool-using agent, tests, Docker |
 
 ### Project 1 — Tabular ML
-**Target: December 2026**
-
 Train a baseline and an improved model. Include data preparation, appropriate metrics, error analysis, and limitations.
 
-### Project 2 — Deployed ML application
-**Target: March 2027**
-
-Serve predictions through Flask or FastAPI with validation, tests, setup instructions, and a demo. Add a compact analytics dashboard to Project 1 or Project 2 using Power BI, Tableau, Plotly, or Streamlit. Include a roughly 20-minute walkthrough explaining the question, data, key insights, caveats, and decisions a stakeholder could make. This provides a credible stepping stone for data analyst internships as well as ML roles.
+### Project 2 — Deployed ML app
+Serve predictions through Flask or FastAPI with validation, tests, setup instructions, and a demo. Add a compact analytics dashboard (Plotly, Streamlit, Power BI, or Tableau) and a **20-minute walkthrough** covering the question, data, key insights, caveats, and the decisions a stakeholder could make. This also supports data analyst applications.
+*Optional idea:* a customer segmentation pipeline served as a FastAPI endpoint.
 
 ### Project 3 — PyTorch deep learning
-**Target: June 2027**
+Train and evaluate a neural network, compare it with a sensible baseline, and document reproducibility. Choose image classification if you want to pair it with CS231n.
 
-Train and evaluate a neural network, compare against a sensible baseline, and document reproducibility. If you choose an image classification task, CS231n is the natural companion course.
+### Project 4 — RAG upgraded into an agent
+Build retrieval from first principles, measure retrieval and answer quality, and add sources. Then add an agent workflow, tests, logging, and Docker.
+*Optional idea:* a modified GPT-2 (changed positional encoding or learning-rate schedule), trained on a small dataset with a write-up. Only after Karpathy's Zero to Hero, and only if you want deeper transformer internals.
 
-### Project 4 — RAG application upgraded into an agent
-**Target: December 2027 – March 2028**
+### Choosing a SIH project
+Pick the SIH project where you can:
+- explain the problem, your own contribution, the data pipeline, the evaluation, and the limitations;
+- reproduce it and demo it reliably.
 
-Build retrieval from first principles, measure retrieval and answer quality, add sources, then introduce agent workflows, tests, logging, and Docker.
+A large team project isn't automatically a strong individual piece. Clearly document what **you** designed, implemented, tested, and maintained.
 
-**SIH rule:** your GeM procurement project or Watershed Insight can replace a project slot if you improve it to the required standard. Don't create extra projects just to reach a count.
+### Every core project should have
+- [ ] A clearly stated problem and data source
+- [ ] A baseline and an appropriate evaluation method
+- [ ] Train/validation/test separation with no data leakage
+- [ ] Error analysis and honest limitations
+- [ ] Reproducible setup instructions and tests
+- [ ] A working demo, or screenshots if deployment isn't practical
+- [ ] A README and short technical write-up
+- [ ] A clear note on your individual contribution
 
-**How to choose which SIH project counts:** choose the project where you can personally explain the problem, your own contribution, the data pipeline, the evaluation method, and the limitations. Prefer the one you can make reproducible and demo reliably. A large team project is not automatically a strong individual portfolio piece; clearly document which parts you designed, implemented, tested, and maintained.
-
-**Visibility rule:** publish one concise technical write-up per project (the README plus a LinkedIn post or blog explaining the problem, your contribution, results, and limitations). By March 2028, make a simple portfolio page that links to the demos, repositories, and write-ups.
-
-**For every core project, aim for:**
-- A clearly stated problem and data source.
-- A baseline and an appropriate evaluation method.
-- Train/validation/test separation where applicable, without data leakage.
-- Error analysis and honest limitations.
-- Reproducible setup instructions and tests.
-- A working demo or deployment where practical.
-- A clear README and short technical write-up.
-
----
-
-## Resource list by purpose
-
-Links are provided as references, not as a claim that every course version or enrollment option has been checked live.
-
-### CS自学指南 (CSDIY) resources
-
-[CS自学指南](https://csdiy.wiki/) is a community-maintained, Chinese-and-English self-learning guide created by a Peking University student. It curates high-quality open courses from MIT, Stanford, UC Berkeley, CMU, and others, with course descriptions, prerequisites, estimated hours, and community homework implementations. It is not a replacement for this roadmap — it is a **curated course encyclopedia** you can consult when you want a specific course recommendation for a named gap.
-
-**Most relevant courses for this roadmap:**
-
-| Course | CSDIY page | Fits in | Why it’s useful | Effort |
-|---|---|---|---|---|
-| [Coursera: Machine Learning (Andrew Ng)](https://csdiy.wiki/机器学习/ML/) | ML | Phase 1 | Your primary ML course; csdiy.wiki provides community notes and structure. | ~100h |
-| [CS229: Machine Learning (Stanford)](https://csdiy.wiki/机器学习/CS229/) | CS229 | Phase 2 (optional) | Math-heavy graduate ML; only if you want algorithm internals, not just application. | ~100h |
-| [CS231n: CNN for Visual Recognition (Stanford)](https://csdiy.wiki/深度学习/CS231/) | CS231 | Phase 3 | Canonical CV course by Fei-Fei Li; companion for Project 3 if image-based. | ~80h |
-| [CS61B: Data Structures and Algorithms (UC Berkeley)](https://csdiy.wiki/数据结构与算法/CS61B/) | CS61B | Phase 4 | Gold-standard DSA course with 14 labs, 10 homeworks, 3 major projects; Java. | ~60h |
-| [MIT 6.006: Introduction to Algorithms](https://csdiy.wiki/数据结构与算法/6.006/) | 6.006 | Phase 4 | Python-friendly algorithms course; alternative or supplement to CS61B. | ~60h |
-| [UCB CS70: Discrete Math and Probability Theory](https://csdiy.wiki/数学进阶/CS70/) | CS70 | Phase 1–2 | Fills probability/discrete math gap with algorithmic applications (hashing, RSA, load balancing). | ~60h |
-| [CS224n: NLP with Deep Learning (Stanford)](https://csdiy.wiki/自然语言处理/CS224n/) | CS224n | Phase 5 | Standard NLP course; selected lectures align with transformers and RAG. | ~80–100h |
-| [CS336: Language Modeling from Scratch (Stanford)](https://csdiy.wiki/深度生成模型/roadmap/) | CS336 | Phase 5 (optional) | Advanced LLM internals; write architecture and training code yourself. | ~100h+ |
-| [MIT 6.S184: Flow Matching and Diffusion Models](https://csdiy.wiki/深度生成模型/MIT6.S184/) | 6.S184 | Phase 5 (optional) | Only if you develop interest in diffusion models; not required for RAG/agents. | ~60h |
-| [CMU 15-445: Database Systems](https://csdiy.wiki/数据库系统/15445/) | 15-445 | Phase 2 or 6 (optional) | Deep database internals (buffer pool, B+ tree, query optimizer, concurrency); C++ required. | ~100h |
-| [Full Stack Open](https://csdiy.wiki/Web开发/fullstackopen/) | fullstackopen | Phase 6 (optional) | React, Node.js, MongoDB, GraphQL; for full-stack agent capstone interface. | ~100h |
-| [CS285: Deep Reinforcement Learning (UC Berkeley)](https://csdiy.wiki/深度强化学习/CS285/) | CS285 | Optional | Only if you develop a specific RL interest after CS50AI. | ~100h |
-
-**How to use CSDIY without breaking this plan:** treat csdiy.wiki as a **reference catalog**, not a second roadmap. When you need a specific course (e.g., "I want a structured DSA course" or "I want to understand databases"), check CSDIY first. Pick **one** course for the gap, apply it to your current phase, and move on. Do not enroll in multiple CSDIY courses in parallel.
-
-### Structured video roadmaps
-
-| Resource | How to use it |
-|---|---|
-| [MASTER ROADMAP 2026–2027: Python Depth → Agentic AI](https://youtube.com/playlist?list=PLYMLIfEYAPgM) — Yogesh Kumar Singh | A faster-paced 18–24 week supplementary sequencing guide. Do **not** watch in upload order. Use it for project ideas, resource discovery, and phase sequencing — not as a replacement for this roadmap. Individual resources from it are already integrated into the phase sections above. |
-
-**Playlist phase map (for reference):**
-- **Phase 1 — Python Depth & Algorithms:** Mindset shift, project-based Python, Fluent Python concepts, Stanford Algorithms in parallel.
-- **Phase 2 — Data & Classical ML:** Data cleaning, MIT OCW math, Andrew Ng ML Specialization + Kaggle.
-- **Phase 3 — Backend & Full-Stack Agentic AI:** FastAPI, Pydantic, CRUD, full-stack agentic engineering.
-- **Phase 4 — Deep Generative AI:** PyTorch, transformers, Karpathy's GPT-2 reproduction.
-- **Ambient track:** Background programming videos for deep-work sessions.
-
-### Python, ML, and data
-
-| Resource | How to use it |
-|---|---|
-| [CS50P](https://cs50.harvard.edu/python/) | Finish your Python foundation. |
-| [Andrew Ng ML Specialization](https://www.deeplearning.ai/specializations/machine-learning/) | Your primary ML course. |
-| [CampusX 100 Days of ML](https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH) | Hindi/English explanations for concepts that need another pass. |
-| [StatQuest](https://www.youtube.com/@statquest) | Short explanations of statistics and ML concepts. |
-| [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course/) | Selected modules and exercises when you need practice. |
-| [Kaggle Learn](https://www.kaggle.com/learn) | Short Pandas and Intro to ML exercises. |
-| [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html) | Your implementation reference for classical ML. |
-| [Tech With Tim — Learn Python With This ONE Project!](https://www.youtube.com/@TechWithTim) | Optional habit-building project for Phase 1. |
-| [freeCodeCamp — 20 Beginner Python Projects](https://www.youtube.com/@freecodecamp) | Cherry-pick 3–5 projects; do not binge. |
-| [Karina Data Scientist — Watch me CLEAN DATA in Minutes with Python](https://www.youtube.com/@KarinaDataScientist) | Practical data-cleaning walkthrough for Phase 1–2. |
-
-**ML resource rule:** Andrew Ng remains the spine. Use CampusX, StatQuest, or Google ML Crash Course only for a specific concept you cannot explain or implement yet; do not complete all of them in parallel.
-
-### SQL and DSA
-
-| Resource | How to use it |
-|---|---|
-| [SQLBolt](https://sqlbolt.com/) | Refresh SQL fundamentals. |
-| [LeetCode SQL 50](https://leetcode.com/studyplan/top-sql-50/) | Structured SQL practice. |
-| [CampusX DSA](https://www.youtube.com/watch?v=f9Aje_cN_CY) | Continue your current DSA course. |
-| [NeetCode](https://neetcode.io/) | Practice interview patterns after learning the fundamentals. |
-| [GitHub Skills](https://skills.github.com/) | Learn GitHub workflows and pull requests. |
-| [Fluent Python](https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/) | Optional reference for generators, decorators, and idiomatic Python. |
-| [Stanford Algorithms (Roughgarden)](https://www.coursera.org/learn/algorithms-part1) | Optional; run in parallel only if DSA is stable. |
-| [freeCodeCamp — Python API Development](https://www.youtube.com/@freecodecamp) | FastAPI, Pydantic, CRUD, and database integration for Phase 2 and Phase 6 backend work. |
-| [CS61B: Data Structures and Algorithms](https://csdiy.wiki/数据结构与算法/CS61B/) | CSDIY; structured DSA course with labs, homeworks, and projects. |
-| [MIT 6.006: Introduction to Algorithms](https://csdiy.wiki/数据结构与算法/6.006/) | CSDIY; Python-friendly algorithms alternative. |
-
-Choose **one DSA course plus independent problem solving**. Don't turn DSA into another collection of playlists.
-
-**Problem-solving rule:** attempt each problem before viewing a solution; after reading one, close it and reimplement from memory. Track patterns and mistakes, not only the total solved count.
-
-**DSA topic sequence**
-- **Q4 2026 (Oct–Dec):** time complexity, arrays, strings, hashing, two pointers, and basic sorting/searching.
-- **Q1 2027 (Jan–Mar):** recursion, stacks, queues, linked lists, binary search, and basic trees.
-- **Q2 2027 (Apr–Jun):** trees, binary search trees, heaps/priority queues, and tree traversals.
-- **Q3 2027 (Jul–Sep):** graphs (BFS/DFS), heaps review, and introductory dynamic programming.
-- **Q4 2027 (Oct–Dec):** mixed practice, sliding window, intervals, greedy patterns, graphs, and basic DP.
-- **Q1 2028 (Jan–Mar):** timed mixed sets, weak-topic revision, and interview-style explanation.
-
-Adjust the order to your current CampusX DSA course and placement syllabus. The sequence is a guide, not a second syllabus to complete separately.
-
-### Mathematics and statistics
-
-| Resource | Use it for |
-|---|---|
-| [3Blue1Brown](https://www.3blue1brown.com/topics/linear-algebra) | Visual intuition for linear algebra and calculus. |
-| [Khan Academy](https://www.khanacademy.org/math) | Fill specific prerequisite gaps. |
-| [MIT 18.06 Linear Algebra](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/) | Matrices, projections, eigenvalues, and related concepts. |
-| [Harvard Stat 110](https://stat110.hsites.harvard.edu/youtube) | Probability, conditional probability, expectation, and distributions. |
-| [MIT 18.065](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/) | Later, when you need deeper matrix methods. |
-| MIT RES.6-012 and MIT 18.650 | Use selectively for relevant math/statistics topics and your curriculum. |
-| [UCB CS70: Discrete Math and Probability Theory](https://csdiy.wiki/数学进阶/CS70/) | CSDIY; discrete math + probability with algorithmic applications. |
-
-Keep mathematics at approximately **two hours a week**. For your university's numerical problems, use resources aligned with your actual syllabus; advanced lectures are supplements, not replacements.
-
-**Math sequence by phase**
-- **Oct–Dec 2026:** Khan Academy and 3Blue1Brown for vectors, matrices, derivatives, and basic probability. CS70 for discrete math + probability.
-- **Jan–Mar 2027:** selected MIT 18.06 lectures plus statistics for model evaluation, distributions, sampling, and validation metrics.
-- **Apr–Jun 2027:** derivatives, chain rule, and gradients for backpropagation; practise by tracing gradients in a small neural network.
-- **Jul–Sep 2027:** Harvard Stat 110 topics on conditional probability and Bayes, aligned with CS50AI uncertainty.
-- **Oct–Dec 2027:** vector representations, dot products, cosine similarity, and nearest-neighbour intuition for embeddings and retrieval.
-- **Jan–Mar 2028:** revisit only the math that blocks your agent/ML project or interview explanations.
-
-Do not try to complete entire university courses just to satisfy this schedule. Select lessons that directly address a current gap.
-
-### Deep learning and LLMs
-
-| Resource | Use it for |
-|---|---|
-| [PyTorch tutorials](https://pytorch.org/tutorials/) | Your primary implementation reference. |
-| [fast.ai](https://course.fast.ai/) | Practical, project-first deep learning. |
-| [Karpathy — Zero to Hero](https://www.youtube.com/@AndrejKarpathy) | Understand neural networks and transformers by building them. |
-| [MIT 6.S191](https://introtodeeplearning.com/) | Selected deep-learning theory lectures. |
-| [Hugging Face LLM Course](https://huggingface.co/learn/llm-course) | Transformers, tokenizers, datasets, and practical NLP. |
-| [Stanford CS224N](https://web.stanford.edu/class/cs224n/) | Selected NLP and transformer lectures. |
-| [DeepLearning.AI short courses](https://www.deeplearning.ai/short-courses/) | Targeted introductions to RAG, LangChain, and agents. |
-| [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp) | A structured, project-first RAG learning path. |
-| [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) | Testing, deployment, and MLOps practice. |
-| [Ollama](https://ollama.com/) | Optional local model runner when your machine can handle the chosen model. |
-| [pguso/rag-from-scratch](https://github.com/pguso/rag-from-scratch) | Build RAG step by step with no black boxes. |
-| [Karpathy — Let's reproduce GPT-2 (124M)](https://www.youtube.com/@AndrejKarpathy) | Advanced masterclass; watch last. |
-| [Kun Chen — L8 Principal Building a Full Stack App with Agentic Engineering](https://www.youtube.com/@KunChen) | Full-stack agentic app integration reference for Phase 6. |
-| [CS231n: CNN for Visual Recognition](https://csdiy.wiki/深度学习/CS231/) | CSDIY; companion for image-based Project 3. |
-| [CS224n: NLP with Deep Learning](https://csdiy.wiki/自然语言处理/CS224n/) | CSDIY; selected lectures for Phase 5. |
-| [CS336: Language Modeling from Scratch](https://csdiy.wiki/深度生成模型/roadmap/) | CSDIY; advanced LLM internals. |
-| [Full Stack Open](https://csdiy.wiki/Web开发/fullstackopen/) | CSDIY; React/Node.js for full-stack agent interface. |
-
-**DeepLearning.AI course decision:** keep the Deep Learning Specialization optional because it is primarily TensorFlow-based. Your main deep-learning implementation track remains **PyTorch**. Use short courses in the LLM phase only when they directly support the project you're building.
-
-**Stanford CS229, Stanford CS25, MIT 6.006, and Roughgarden's algorithms courses remain optional.** Don't add them simply because they're prestigious.
+**Visibility:** Publish one concise write-up per project (README plus a LinkedIn post or blog). By March 2028, have a simple portfolio page linking to demos, repos, and write-ups.
 
 ---
 
-## Quarterly go/no-go checkpoints
+## Checkpoints
 
-Use these checkpoints to adjust scope instead of silently carrying unfinished work forward. Quarter-end weeks are buffers, not extra deadlines.
+Use these to adjust scope. Don't silently carry unfinished work forward. Quarter-end weeks are buffers, not extra deadlines.
 
 | By | Check | If not met |
 |---|---|---|
-| **Dec 2026** | Project 1 is complete; Andrew Ng's course is at least halfway through. | Drop optional reading and extra notebooks; protect the main course and Project 1. |
-| **Mar 2027** | Ng's course is complete; Project 2 is deployed; dashboard and walkthrough are usable. | Delay PyTorch by up to a month if needed; do not skip evaluation or testing. |
-| **Jun 2027** | Project 3 is complete and reproducible. | Reduce the number of CS50AI projects in Phase 4; keep DSA steady. |
-| **Sep 2027** | Selected CS50AI work is documented; mock interviews and DSA review have started. | Narrow CS50AI to the priority topics and begin mock interviews with current knowledge. |
-| **Dec 2027** | RAG is deployed with a documented 30–50-question evaluation set. | Keep the agent simple; preserve tests and RAG evaluation rather than adding features. |
-| **Mar 2028** | Portfolio page, resume, application tracker, and agent capstone are presentable. | Prioritize reliable demos, clear project explanations, and applications over new courses. |
+| **Dec 2026** | Project 1 complete; Ng's course at least halfway | Drop optional reading. Protect the main course and Project 1. |
+| **Mar 2027** | Ng's course complete; Project 2 deployed with dashboard | Delay PyTorch up to a month. Don't skip evaluation or tests. |
+| **Jun 2027** | Project 3 complete and reproducible | Reduce CS50AI scope in Phase 4. Keep DSA steady. |
+| **Sep 2027** | CS50AI work documented; mock interviews and DSA review started | Narrow CS50AI to priority topics. Start mock interviews now. |
+| **Dec 2027** | RAG deployed with a 30–50-question evaluation set | Keep the agent simple. Protect tests and RAG evaluation. |
+| **Mar 2028** | Portfolio page, resume, tracker, and agent capstone ready | Prioritize reliable demos, clear explanations, and applications. |
 
 ---
 
-## Month-by-month execution checklist
+## Measurable targets
 
-- [ ] **Oct 2026** — Finish CS50P; start Andrew Ng; clean GitHub; solve 10 SQL problems; choose a small Python project.
-- [ ] **Nov 2026** — Study regression and classification; practise NumPy/pandas; start Project 1; inspect two relevant open-source repositories.
-- [ ] **Dec 2026** — Complete Project 1 with evaluation, error analysis, limitations, and a clear README.
-- [ ] **Jan 2027** — Study ensembles, cross-validation, leakage, and tuning; start Project 2; continue timed DSA practice.
-- [ ] **Feb 2027** — Build the Flask/FastAPI interface; add tests; prepare your resume and internship application tracker.
-- [ ] **Mar 2027** — Finish the ML Specialization; deploy and document Project 2; use internship applications as practice.
-- [ ] **Apr 2027** — Learn PyTorch tensors, autograd, modules, and training loops; start Project 3.
-- [ ] **May 2027** — Study optimization, regularization, and CNNs or text classification; compare against a baseline.
-- [ ] **Jun 2027** — Finish Project 3 with reproducible evaluation and a technical write-up.
-- [ ] **Jul 2027** — Start selected CS50AI topics; strengthen probability/statistics and DSA.
-- [ ] **Aug 2027** — Continue CS50AI projects; practise Python fluency and add tests to existing work.
-- [ ] **Sep 2027** — Review selected CS50AI topics; practise interview DSA; pursue substantive open-source contributions.
-- [ ] **Oct 2027** — Study tokenization, embeddings, transformers, pretrained models, and basic inference.
-- [ ] **Nov 2027** — Build raw RAG: document parsing, chunking, embeddings, retrieval, grounded answers, and an evaluation set.
-- [ ] **Dec 2027** — Use LangChain where helpful; deploy Project 4 with source references and measured retrieval quality.
-- [ ] **Jan 2028** — Learn LangGraph state, nodes, edges, conditional routing, and tool calling; containerize a small agent.
-- [ ] **Feb 2028** — Upgrade RAG into an agent; add tests, logging, basic monitoring, and documented evaluation.
-- [ ] **Mar 2028** — Polish all four projects, revise Python/ML/SQL/DSA, update your resume, and apply for summer 2028 roles.
-
-Treat this as a direction, not a rigid deadline. College examinations, SIH, and a promising internship or contribution opportunity can justify shifting a milestone.
-
----
-
-## Measurable targets by March 2028
-
-| Area | Target |
+| Area | Target by March 2028 |
 |---|---|
-| **Projects** | 4 core evaluated projects: tabular ML, deployed ML app, PyTorch model, RAG-to-agent system |
-| **DSA** | 300+ independently solved problems; track topic coverage, timed performance, and explanation ability |
-| **SQL** | 150+ problems including joins, aggregation, subqueries, CTEs, window functions |
+| **Projects** | 4 evaluated projects (tabular ML, deployed ML app, PyTorch model, RAG → agent) |
+| **DSA** | 300+ independently solved problems, tracked by topic and explanation quality |
+| **SQL** | 150+ problems: joins, aggregation, subqueries, CTEs, window functions |
 | **Open source** | 2–4 substantive PR attempts; at least one merged or meaningfully reviewed |
-| **Mock interviews** | 10+ by March 2028, starting September 2027 |
+| **Mock interviews** | 10+, starting September 2027 |
 | **Deployment** | Deployed RAG app with retrieval evaluation; agent with tests, logging, Docker |
-| **GitHub** | Clean repos with READMEs, tests, reproducible setup |
-| **Career** | Updated resume, LinkedIn, simple portfolio page, application tracker, and a short write-up for each project |
+| **GitHub** | Clean repos with README, tests, and reproducible setup |
+| **Career** | Updated resume, LinkedIn, portfolio page, application tracker, one write-up per project |
 
-These are ambitious targets. Treat them as direction, not a reason to inflate problem counts or rush shallow projects. A smaller set of projects you can explain, reproduce, and defend is more valuable than many shallow repositories.
+**Two tiers of success**
+- **Core:** 3–4 strong projects you can explain and reproduce, steady DSA/SQL, at least one real contribution attempt, and clear write-ups.
+- **Stretch:** 300+ DSA problems, 150+ SQL problems, multiple substantive PRs, and 10+ mock interviews.
 
-**Interpret the numbers in two tiers:**
-- **Core success:** three to four strong projects, consistent DSA/SQL practice, at least one credible contribution attempt, and clear explanations of your work.
-- **Stretch success:** 300+ DSA problems, 150+ SQL problems, multiple substantive PR attempts, and 10+ mock interviews.
-
-If college, exams, or SIH make the stretch numbers unrealistic, preserve project quality and interview-level understanding rather than rushing to hit counts.
+If college or SIH makes the stretch numbers unrealistic, protect project quality and interview-level understanding instead.
 
 ---
 
 ## Career and open-source milestones
 
-| Period | Career focus |
+| Period | Focus |
 |---|---|
-| **Oct–Dec 2026** | Improve GitHub, explore relevant repositories, and learn contribution workflows. |
-| **Jan–Mar 2027** | Build your resume, practise applications, and attempt an appropriate first PR. |
-| **Apr–Sep 2027** | Improve project quality, interview skills, and contribution depth. |
-| **Oct–Dec 2027** | Demonstrate LLM/RAG ability through a tested and evaluated project. |
-| **Jan–Mar 2028** | Polish the portfolio and target summer 2028 internships. |
+| **Oct – Dec 2026** | Improve GitHub. Explore relevant repositories. Learn the contribution workflow. |
+| **Jan – Mar 2027** | Build your resume. Practice applications. Attempt a first PR. |
+| **Apr – Sep 2027** | Improve project quality, interview skills, and contribution depth. |
+| **Oct – Dec 2027** | Show LLM/RAG ability through a tested, evaluated project. |
+| **Jan – Mar 2028** | Polish the portfolio. Target summer 2028 internships. |
 
-GSoC can be an opportunity, but selection is not guaranteed. If you are not selected, the same useful contributions, code reviews, issue investigations, and technical discussions can still strengthen your GitHub and resume. Focus first on understanding a real codebase, communicating with maintainers, and making useful contributions.
+**About GSoC:** Selection isn't guaranteed. If you're not selected, the same work still counts: reading a real codebase, communicating with maintainers, reviewing code, and making useful contributions.
+
+**Don't wait:** You don't need to finish all 18 months before applying.
 
 ---
 
-## Total effort over 18 months
+## Resources
 
-| Weekly pace | Total over 78 weeks |
+Links are references. Course versions and enrollment options may change, so check them before you start.
+
+### Core (use these)
+
+| Resource | Phase | Purpose |
+|---|---|---|
+| [CS50P](https://cs50.harvard.edu/python/) | 1 | Python foundations |
+| [Andrew Ng — ML Specialization](https://www.deeplearning.ai/specializations/machine-learning/) | 1–2 | Primary ML course (the spine of the plan) |
+| [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html) | 1–2 | Classical ML reference |
+| [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course/) | 2 | Specific modules when needed |
+| [Flask docs](https://flask.palletsprojects.com/) | 2 | Web APIs |
+| [PyTorch Tutorials](https://pytorch.org/tutorials/) | 3 | Main deep-learning implementation |
+| [fast.ai](https://course.fast.ai/) | 3 | Practical deep learning |
+| [Harvard CS50AI](https://cs50.harvard.edu/ai/) | 4 | Search, uncertainty, optimization (priority topics) |
+| [CS61B (CSDIY)](https://csdiy.wiki/数据结构与算法/CS61B/) | 4 | Structured DSA course |
+| [Hugging Face LLM Course](https://huggingface.co/learn/llm-course) | 5 | Transformers, tokenizers, and pretrained models |
+| [LangChain / LangGraph docs](https://docs.langchain.com/oss/python/learn) | 5–6 | RAG and agent tooling |
+| [pguso/rag-from-scratch](https://github.com/pguso/rag-from-scratch) | 5 | Build RAG step by step |
+| [Docker — Get Started](https://docs.docker.com/get-started/) | 6 | Containers |
+| [Made With ML](https://madewithml.com/) | 6 | Testing, deployment, monitoring |
+
+### Practice
+
+| Resource | Purpose |
+|---|---|
+| [SQLBolt](https://sqlbolt.com/) | SQL fundamentals refresh |
+| [LeetCode SQL 50](https://leetcode.com/studyplan/top-sql-50/) | Structured SQL practice |
+| [NeetCode](https://neetcode.io/) | Interview patterns, after you learn the fundamentals |
+| [Kaggle Learn](https://www.kaggle.com/learn) | Short pandas and intro-to-ML exercises |
+| [GitHub Skills](https://skills.github.com/) | Git and PR workflows |
+
+**DSA rule:** Attempt each problem before reading a solution. After reading one, close it and rewrite it from memory. Track patterns and mistakes, not just the count.
+
+**DSA topic sequence (a guide, adjust to your CampusX DSA course)**
+
+| Quarter | Topics |
+|---|---|
+| Q4 2026 | Time complexity, arrays, strings, hashing, two pointers, basic sorting and searching |
+| Q1 2027 | Recursion, stacks, queues, linked lists, binary search, basic trees |
+| Q2 2027 | Trees, BSTs, heaps and priority queues, traversals |
+| Q3 2027 | Graphs (BFS/DFS), heap review, intro dynamic programming |
+| Q4 2027 | Mixed practice, sliding window, intervals, greedy, graphs, basic DP |
+| Q1 2028 | Timed mixed sets, weak-topic revision, interview-style explanations |
+
+**Choose one DSA course plus independent problem solving.** Use [CampusX DSA](https://www.youtube.com/watch?v=f9Aje_cN_CY) if that's your current course. Don't turn DSA into a playlist collection.
+
+### Mathematics and statistics (~2 hours/week)
+
+| Period | Focus | Resource |
+|---|---|---|
+| Oct – Dec 2026 | Vectors, matrices, derivatives, basic probability | [Khan Academy](https://www.khanacademy.org/math), [3Blue1Brown](https://www.3blue1brown.com/topics/linear-algebra) |
+| Oct – Dec 2026 | Discrete math and probability | [CS70 (CSDIY)](https://csdiy.wiki/数学进阶/CS70/) |
+| Jan – Mar 2027 | Linear algebra and statistics for evaluation and validation metrics | [MIT 18.06](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/) (selected lectures) |
+| Apr – Jun 2027 | Chain rule and gradients for backpropagation | Trace gradients by hand in a small network |
+| Jul – Sep 2027 | Conditional probability and Bayes (aligned with CS50AI uncertainty) | [Harvard Stat 110](https://stat110.hsites.harvard.edu/youtube) |
+| Oct – Dec 2027 | Dot products, cosine similarity, nearest neighbors (for embeddings) | Your RAG project |
+| Jan – Mar 2028 | Only the math that blocks your agent project or interview explanations | As needed |
+
+**Reference only:** [MIT 18.065](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/) (later, for deeper matrix methods) · MIT 18.650 (statistics) · MIT RES.6-012 (probability), via [MIT OCW](https://ocw.mit.edu/)
+
+Study only lessons that address a current gap. Don't try to finish full university courses.
+
+### Optional course catalog (CSDIY)
+
+[CS自学指南 (CSDIY)](https://csdiy.wiki/) is a community-maintained guide with course descriptions, prerequisites, and estimated hours. Use it as a **reference catalog**, not a second roadmap. Pick **one** course for a named gap, and never run several in parallel.
+
+| Course | Phase | Effort | Use when |
+|---|---|---|---|
+| [CS229 (Stanford)](https://csdiy.wiki/机器学习/CS229/) | 2 | ~100 h | You want algorithm-level ML depth |
+| [CMU 15-445 (Databases)](https://csdiy.wiki/数据库系统/15445/) | 2 or 6 | ~100 h | You want database internals (needs C++) |
+| [CS231n (Stanford)](https://csdiy.wiki/深度学习/CS231/) | 3 | ~80 h | Project 3 is image-based |
+| [CS285 (Berkeley RL)](https://rail.eecs.berkeley.edu/deeprlcourse/) | Optional | ~100 h | You develop a specific RL interest |
+| [CS224n (Stanford NLP)](https://web.stanford.edu/class/cs224n/) | 5 | ~80–100 h | Transformers and NLP depth (selected lectures) |
+| [CS336 (Stanford LLMs)](https://csdiy.wiki/深度生成模型/roadmap/) | 5 | ~100 h+ | You want to write LLM training code yourself |
+| [MIT 6.S184 (Diffusion)](https://csdiy.wiki/深度生成模型/MIT6.S184/) | 5 | ~60 h | You're interested in diffusion models |
+| [MIT 6.006 (Algorithms)](https://csdiy.wiki/数据结构与算法/6.006/) | 4 | ~60 h | You prefer a Python-friendly algorithms course |
+| [Full Stack Open](https://csdiy.wiki/Web开发/fullstackopen/) | 6 | ~100 h | You want a React/Node.js interface for the agent |
+
+### Structured playlist (supplementary only)
+
+[MASTER ROADMAP 2026–2027: Python Depth → Agentic AI](https://youtube.com/playlist?list=PLYMLIfEYAPgM) by Yogesh Kumar Singh is a faster-paced sequencing guide. **Don't watch it in upload order.** Use it to find project ideas and resources. Its main resources are already included above.
+
+### Other supplements (use only for a specific gap)
+- [CampusX — 100 Days of ML](https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH) — Hindi/English explanations
+- [StatQuest](https://www.youtube.com/@statquest) — short statistics and ML explanations
+- [freeCodeCamp](https://www.youtube.com/@freecodecamp) — API development and Python projects
+- [Stanford Algorithms (Roughgarden)](https://www.coursera.org/learn/algorithms-part1) — optional, only if DSA is stable
+- [Fluent Python](https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/) — reference for idiomatic Python
+- [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) — deployment practice
+
+---
+
+## Rules
+
+1. **No third major track.** One main course plus one project at a time, plus DSA.
+2. **Protect college and sleep.** Exam and SIH weeks drop to 3–8 hours. No backlog.
+3. **Keep DSA regular.** 3–4 hours a week, in shorter sessions on busy days.
+4. **Cut scope, not quality.** Remove features before you remove tests, evaluation, or documentation.
+5. **Start open source early.** Read repositories from November 2026.
+6. **Start mock interviews in September 2027.** Don't wait until the last month.
+7. **Reset if unsustainable.** Three weeks behind → drop to 10 hours and rebuild.
+8. **Apply on evidence.** You don't need to finish 18 months before applying.
+
+---
+
+## Total effort
+
+| Pace | Total over 78 weeks |
 |---:|---:|
-| 15 hours | 1,170 hours |
-| 16 hours | 1,248 hours |
-| 18 hours | 1,404 hours |
+| 15 h/week | 1,170 h |
+| 16 h/week | 1,248 h |
+| 18 h/week | 1,404 h |
 
-Actual totals will be lower after exams, illness, hackathons, and breaks. Plan for lighter weeks instead of assuming perfect attendance.
-
----
-
-## Your first seven days
-
-- [ ] Finish the remaining CS50P work and verify your solutions.
-- [ ] Begin Andrew Ng's ML Specialization; schedule the first lessons.
-- [ ] Solve 10 SQL problems and review mistakes.
-- [ ] Improve your GitHub profile and clean up one repository.
-- [ ] Block your weekly 16 hours around college and existing commitments.
-- [ ] Create a simple tracker for learning, DSA, projects, and applications.
-- [ ] Pick two potential GSoC organizations and read their contribution guides.
+Real totals will be lower after exams, illness, and breaks. Plan for lighter weeks instead of perfect attendance.
 
 ---
 
-## Weekly review and course-entry gates
-
-Use this lightweight review every Sunday:
-
-1. What did I **build or solve independently** this week?
-2. What concept can I explain without notes?
-3. What is blocked, and what is the smallest next action?
-4. Which one task matters most next week?
-5. Did the plan fit around college, sleep, and other commitments?
-
-Before adding a new course, require all three:
-- It fills a named gap in the current phase.
-- You can identify the exact lesson/module you need.
-- You will apply it to a project or problem within the next two weeks.
-
-If any answer is no, save the link for later. Do not start the course now.
-
-### Project completion gate
-
-Before marking a portfolio project complete, check:
-- [ ] A stranger can understand the problem and run the project from the README.
-- [ ] The baseline, evaluation method, and results are visible.
-- [ ] Data leakage and other major evaluation risks have been considered.
-- [ ] Important failure cases and limitations are documented.
-- [ ] Tests cover the most important behavior.
-- [ ] A demo or screenshots are available where deployment is impractical.
-- [ ] Your individual contribution is clearly distinguished from team contributions.
-
----
-
-## Final rules
-
-1. **No third major learning track.** Keep Roughgarden and CS229 optional unless clearly ahead.
-2. **Protect college and sleep.** During exam or SIH weeks, drop to 3–8 hours. No backlog.
-3. **Keep DSA regular.** 3–4 hours weekly, with shorter sessions on busy days.
-4. **Cut scope, not quality.** If a project is late, reduce features before dropping tests, evaluation, or documentation.
-5. **Open source starts early.** Read repositories in November 2026.
-6. **Mock interviews start September 2027.** Do not wait until the final month.
-7. **Reset if unsustainable.** Miss three weeks in a row → drop to 10 hours and rebuild.
-8. **Apply based on evidence.** You do not need to finish all 18 months before applying.
-
-**Final rule:** Until November, focus on **CS50P, Andrew Ng, and your existing DSA practice**. Do not start every course in the resource list. The best next step is to make progress on the first three tasks and turn what you learn into working code.
-
----
-
-*No plan can guarantee GSoC selection, an internship, or a top-10% ranking. This one gives you tangible work and technical evidence with which to compete.*
+*No plan can guarantee GSoC selection, an internship, or a top-10% ranking. This plan gives you real work and technical evidence to compete with.*
