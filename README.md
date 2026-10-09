@@ -6,6 +6,8 @@
 
 > GSoC, internships, and merged PRs are **targets, not promises**.
 
+**Track your progress in [PROGRESS.md](PROGRESS.md)** and update it every Sunday.
+
 ---
 
 ## Contents
@@ -31,7 +33,7 @@
 | **Duration** | 78 weeks · Oct 2026 – Mar 2028 |
 | **Pace** | 15 h minimum · **16 h target** · 18 h stretch |
 | **Starting point** | CS50SQL done · CS50P nearly done · Python/Flask basics · hackathon experience · SIH projects (GeM procurement, Watershed Insight) |
-| **Finish line** | 4 evaluated projects, a deployed ML app, a RAG-to-agent system, steady DSA and SQL practice, and a polished GitHub, resume, and LinkedIn |
+| **Finish line** | 5 evaluated projects, a deployed ML app, a RAG-to-agent system, steady DSA and SQL practice, and a polished GitHub, resume, and LinkedIn |
 | **Total effort** | ~1,248 h at 16 h/week (1,170 h at 15 h · 1,404 h at 18 h). Real totals will be lower after exams and breaks. |
 
 ### Phases at a glance
@@ -41,7 +43,7 @@
 | 1. Foundations | Oct – Dec 2026 | Python, supervised ML, SQL, pandas | **P1** Tabular ML (Dec 2026) |
 | 2. Applied ML | Jan – Mar 2027 | Model selection, APIs, deployment, Git | **P2** Deployed ML app (Mar 2027) |
 | 3. Deep Learning | Apr – Jun 2027 | PyTorch, neural networks, CNNs | **P3** PyTorch model (Jun 2027) |
-| 4. AI Foundations & Algorithms | Jul – Sep 2027 | Search, uncertainty, DSA interview prep | **P4-pre** AI mini-project + mock interviews start |
+| 4. AI Foundations & Algorithms | Jul – Sep 2027 | Search, uncertainty, DSA interview prep | **P3.5** AI mini-project + mock interviews start |
 | 5. LLMs & RAG | Oct – Dec 2027 | Transformers, embeddings, retrieval | **P4a** Deployed RAG app (Dec 2027) |
 | 6. Agents & Portfolio | Jan – Mar 2028 | LangGraph, Docker, testing, portfolio | **P4b** Agent capstone (Mar 2028) |
 
@@ -87,7 +89,7 @@ Your first 7 days:
 | Thu | Main course 1 h + project 1 h |
 | Fri | Project 2 h + testing/docs 1 h |
 | Sat | DSA 1 h + open source/career 1 h |
-| Sun | Main course 1 h + math/stats 1 h + review 15 min |
+| Sun | Main course 2 h + math/stats 1 h |
 
 Use **18 hours** only when college and sleep allow. Drop to **15** in lighter weeks.
 
@@ -215,7 +217,7 @@ Each phase has a goal, core resources, optional extras, a monthly checklist, and
 
 **Core resources**
 - [Harvard CS50AI](https://cs50.harvard.edu/ai/) — **priority topics only:** search, knowledge representation, uncertainty, optimization. Skip ML and neural-network sections that duplicate Ng/PyTorch.
-- **DSA:** Continue with [DSA for AI (Telegram)](https://t.me/DSAFORAI) and [NeetCode](https://neetcode.io/) — trees, graphs, heaps, DP. See [DSA track](#dsa-track).
+- **DSA:** Continue with [DSA for AI (Telegram)](https://t.me/DSAFORAI) and [NeetCode](https://neetcode.io/) — trees, graphs, heaps, DP. See the [DSA track](#dsa-track).
 
 **Optional extras**
 - [MIT 6.006](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/) — extra depth on graphs and DP
