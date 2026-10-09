@@ -23,6 +23,7 @@
   - [Phase 6 — Agents, MLOps, and Applications](#phase-6--agents-mlops-and-applications)
 - [Four-project portfolio](#four-project-portfolio)
 - [Resource list by purpose](#resource-list-by-purpose)
+  - [CS自学指南 (CSDIY) resources](#cs自学指南-csdiy-resources)
   - [Structured video roadmaps](#structured-video-roadmaps)
   - [Python, ML, and data](#python-ml-and-data)
   - [SQL and DSA](#sql-and-dsa)
@@ -108,6 +109,10 @@ Use **16 hours per week** as your normal target. Increase to **18 only** when co
 - [freeCodeCamp — 20 Beginner Python Projects](https://www.youtube.com/@freecodecamp) — cherry-pick 3–5 projects; do not binge.
 - [Karina Data Scientist — Watch me CLEAN DATA in Minutes with Python](https://www.youtube.com/@KarinaDataScientist) — practical, realistic data-cleaning walkthrough.
 
+**CSDIY resources:**
+- **[Coursera: Machine Learning (Andrew Ng)](https://csdiy.wiki/机器学习/ML/)** — csdiy.wiki's entry for the same course you're already taking; useful for course structure and community notes. ~100 hours, Python, Stanford.[reference:0]
+- **[UCB CS70: Discrete Math and Probability Theory](https://csdiy.wiki/数学进阶/CS70/)** — fills your probability and discrete math gap with direct algorithmic applications (logic → stable matching, graph theory → network topology, probability → hashing and load balancing). ~60 hours.[reference:1]
+
 **Milestone:** Finish CS50P, begin the ML Specialization, clean up GitHub, and produce a baseline tabular ML project with honest evaluation.
 
 **Optional project:** In-Memory Task & Analytics CLI Engine — builds Python depth through custom data structures; good early confidence project.
@@ -130,6 +135,10 @@ Use **16 hours per week** as your normal target. Increase to **18 only** when co
 
 **Additional resources:**
 - [freeCodeCamp — Python API Development](https://www.youtube.com/@freecodecamp) — FastAPI, Pydantic, CRUD, and database integration for backend work.
+
+**CSDIY resources:**
+- **[CS229: Machine Learning (Stanford)](https://csdiy.wiki/机器学习/CS229/)** — the graduate-level, math-heavy version of ML. You already have this listed as optional; csdiy.wiki confirms it requires strong math background and is best for those who want to understand algorithm internals rather than just use libraries. ~100 hours.[reference:2]
+- **[CMU 15-445: Database Systems](https://csdiy.wiki/数据库系统/15445/)** — if you want to deeply understand what happens under the hood of SQL databases. Covers buffer pool management, B+ tree indexes, query executors/optimizer, and concurrency control through four hands-on projects on the Bustub relational database. Requires C++ and data structures. ~100 hours. **Use only if you want backend depth beyond SQL practice.**[reference:3]
 
 **Milestone:** Finish the ML Specialization and turn a second project into a reproducible, tested application.
 
@@ -155,7 +164,8 @@ Use **16 hours per week** as your normal target. Increase to **18 only** when co
 
 **Supplements:** [Karpathy's Neural Networks: Zero to Hero](https://www.youtube.com/@AndrejKarpathy) · selected [MIT 6.S191](https://introtodeeplearning.com/) lectures
 
-**Additional resources:** None specific from the playlist; continue with the main and supplementary resources.
+**CSDIY resources:**
+- **[CS231n: CNN for Visual Recognition (Stanford)](https://csdiy.wiki/深度学习/CS231/)** — the canonical computer vision course by Fei-Fei Li. Covers CNN architectures, training, and visual recognition. ~80 hours, Python. **Strong fit for your Project 3 if you choose an image classification task.**[reference:4]
 
 **Milestone:** Finish a PyTorch project with a reproducible training process, evaluation, and a technical write-up.
 
@@ -181,7 +191,10 @@ Use **16 hours per week** as your normal target. Increase to **18 only** when co
 
 **Supplement:** [MIT 6.006](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/) for algorithm reasoning when needed.
 
-**Additional resources:** [Stanford Algorithms (Roughgarden)](https://www.coursera.org/learn/algorithms-part1) — optional; run in parallel only if DSA is stable. GSoC prep if relevant.
+**CSDIY resources:**
+- **[CS61B: Data Structures and Algorithms (UC Berkeley)](https://csdiy.wiki/数据结构与算法/CS61B/)** — the gold-standard data structures course. 14 labs, 10 homeworks, and 3 projects with thousands of lines of engineering code. Java-based, with autograder access through Gradescope. ~60 hours. **Use this as the structured backbone for your DSA practice in this phase.**[reference:5]
+- **[MIT 6.006: Introduction to Algorithms](https://csdiy.wiki/数据结构与算法/6.006/)** — MIT's algorithms course; Python-friendly, good complement if you prefer Python over Java for algorithms.[reference:6]
+- **[CS285: Deep Reinforcement Learning (UC Berkeley)](https://csdiy.wiki/深度强化学习/CS285/)** — optional; only if you develop a specific interest in RL after CS50AI. Not required for your target roles.
 
 **Milestone:** Complete selected AI projects, revise DSA, begin mock interviews, and pursue meaningful open-source contributions.
 
@@ -209,6 +222,11 @@ Use **16 hours per week** as your normal target. Increase to **18 only** when co
 
 **Additional resources:**
 - [Karpathy — Let's reproduce GPT-2 (124M)](https://www.youtube.com/@AndrejKarpathy) — advanced masterclass; watch last. Reproduce, modify architecture, train on a small dataset, publish a write-up.
+
+**CSDIY resources:**
+- **[CS224n: Natural Language Processing with Deep Learning (Stanford)](https://csdiy.wiki/自然语言处理/CS224n/)** — the standard NLP course for deep learning. Covers word vectors, RNNs, attention, transformers, and pretraining. Selected lectures align with your RAG phase. ~80–100 hours.[reference:7]
+- **[CS336: Language Modeling from Scratch (Stanford)](https://csdiy.wiki/深度生成模型/roadmap/)** — LLM course that emphasizes writing model architecture and training code yourself. Advanced; use selected lectures if you want deeper LLM internals.[reference:8]
+- **[MIT 6.S184: Introduction to Flow Matching and Diffusion Models](https://csdiy.wiki/深度生成模型/MIT6.S184/)** — optional; only if you develop interest in diffusion models for generative AI. Not required for RAG or agentic AI roles.[reference:9]
 
 **Milestone:** Build Project 4 — a RAG application with source citations, a test dataset, retrieval evaluation, and a deployed interface.
 
@@ -238,6 +256,10 @@ Use **16 hours per week** as your normal target. Increase to **18 only** when co
 
 **Additional resources:**
 - [Kun Chen — L8 Principal Building a Full Stack App with Agentic Engineering](https://www.youtube.com/@KunChen) — full-stack agentic app integration reference.
+
+**CSDIY resources:**
+- **[Full Stack Open](https://csdiy.wiki/Web开发/fullstackopen/)** — free course on modern JavaScript-based web development covering React, Redux, Node.js, MongoDB, GraphQL, and TypeScript. **Useful if you want to build a full-stack interface for your agent capstone**, moving beyond a simple Flask UI. This is the same stack referenced in the "Autonomous Research Assistant" optional project below.[reference:10]
+- **[CMU 15-445: Database Systems](https://csdiy.wiki/数据库系统/15445/)** — if you want production-grade backend depth for your agent system, especially if you choose the full-stack capstone with PostgreSQL. See Phase 2 for details.
 
 **Milestone:** Upgrade the RAG app into a tested, documented agentic system; polish your portfolio and apply for summer 2028 internships.
 
@@ -272,7 +294,7 @@ Serve predictions through Flask or FastAPI with validation, tests, setup instruc
 ### Project 3 — PyTorch deep learning
 **Target: June 2027**
 
-Train and evaluate a neural network, compare against a sensible baseline, and document reproducibility.
+Train and evaluate a neural network, compare against a sensible baseline, and document reproducibility. If you choose an image classification task, CS231n is the natural companion course.
 
 ### Project 4 — RAG application upgraded into an agent
 **Target: December 2027 – March 2028**
@@ -299,6 +321,29 @@ Build retrieval from first principles, measure retrieval and answer quality, add
 ## Resource list by purpose
 
 Links are provided as references, not as a claim that every course version or enrollment option has been checked live.
+
+### CS自学指南 (CSDIY) resources
+
+[CS自学指南](https://csdiy.wiki/) is a community-maintained, Chinese-and-English self-learning guide created by a Peking University student. It curates high-quality open courses from MIT, Stanford, UC Berkeley, CMU, and others, with course descriptions, prerequisites, estimated hours, and community homework implementations. It is not a replacement for this roadmap — it is a **curated course encyclopedia** you can consult when you want a specific course recommendation for a named gap.
+
+**Most relevant courses for this roadmap:**
+
+| Course | CSDIY page | Fits in | Why it’s useful | Effort |
+|---|---|---|---|---|
+| [Coursera: Machine Learning (Andrew Ng)](https://csdiy.wiki/机器学习/ML/) | ML | Phase 1 | Your primary ML course; csdiy.wiki provides community notes and structure. | ~100h |
+| [CS229: Machine Learning (Stanford)](https://csdiy.wiki/机器学习/CS229/) | CS229 | Phase 2 (optional) | Math-heavy graduate ML; only if you want algorithm internals, not just application. | ~100h |
+| [CS231n: CNN for Visual Recognition (Stanford)](https://csdiy.wiki/深度学习/CS231/) | CS231 | Phase 3 | Canonical CV course by Fei-Fei Li; companion for Project 3 if image-based. | ~80h |
+| [CS61B: Data Structures and Algorithms (UC Berkeley)](https://csdiy.wiki/数据结构与算法/CS61B/) | CS61B | Phase 4 | Gold-standard DSA course with 14 labs, 10 homeworks, 3 major projects; Java. | ~60h |
+| [MIT 6.006: Introduction to Algorithms](https://csdiy.wiki/数据结构与算法/6.006/) | 6.006 | Phase 4 | Python-friendly algorithms course; alternative or supplement to CS61B. | ~60h |
+| [UCB CS70: Discrete Math and Probability Theory](https://csdiy.wiki/数学进阶/CS70/) | CS70 | Phase 1–2 | Fills probability/discrete math gap with algorithmic applications (hashing, RSA, load balancing). | ~60h |
+| [CS224n: NLP with Deep Learning (Stanford)](https://csdiy.wiki/自然语言处理/CS224n/) | CS224n | Phase 5 | Standard NLP course; selected lectures align with transformers and RAG. | ~80–100h |
+| [CS336: Language Modeling from Scratch (Stanford)](https://csdiy.wiki/深度生成模型/roadmap/) | CS336 | Phase 5 (optional) | Advanced LLM internals; write architecture and training code yourself. | ~100h+ |
+| [MIT 6.S184: Flow Matching and Diffusion Models](https://csdiy.wiki/深度生成模型/MIT6.S184/) | 6.S184 | Phase 5 (optional) | Only if you develop interest in diffusion models; not required for RAG/agents. | ~60h |
+| [CMU 15-445: Database Systems](https://csdiy.wiki/数据库系统/15445/) | 15-445 | Phase 2 or 6 (optional) | Deep database internals (buffer pool, B+ tree, query optimizer, concurrency); C++ required. | ~100h |
+| [Full Stack Open](https://csdiy.wiki/Web开发/fullstackopen/) | fullstackopen | Phase 6 (optional) | React, Node.js, MongoDB, GraphQL; for full-stack agent capstone interface. | ~100h |
+| [CS285: Deep Reinforcement Learning (UC Berkeley)](https://csdiy.wiki/深度强化学习/CS285/) | CS285 | Optional | Only if you develop a specific RL interest after CS50AI. | ~100h |
+
+**How to use CSDIY without breaking this plan:** treat csdiy.wiki as a **reference catalog**, not a second roadmap. When you need a specific course (e.g., "I want a structured DSA course" or "I want to understand databases"), check CSDIY first. Pick **one** course for the gap, apply it to your current phase, and move on. Do not enroll in multiple CSDIY courses in parallel.
 
 ### Structured video roadmaps
 
@@ -342,6 +387,8 @@ Links are provided as references, not as a claim that every course version or en
 | [Fluent Python](https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/) | Optional reference for generators, decorators, and idiomatic Python. |
 | [Stanford Algorithms (Roughgarden)](https://www.coursera.org/learn/algorithms-part1) | Optional; run in parallel only if DSA is stable. |
 | [freeCodeCamp — Python API Development](https://www.youtube.com/@freecodecamp) | FastAPI, Pydantic, CRUD, and database integration for Phase 2 and Phase 6 backend work. |
+| [CS61B: Data Structures and Algorithms](https://csdiy.wiki/数据结构与算法/CS61B/) | CSDIY; structured DSA course with labs, homeworks, and projects. |
+| [MIT 6.006: Introduction to Algorithms](https://csdiy.wiki/数据结构与算法/6.006/) | CSDIY; Python-friendly algorithms alternative. |
 
 Choose **one DSA course plus independent problem solving**. Don't turn DSA into another collection of playlists.
 
@@ -367,11 +414,12 @@ Adjust the order to your current CampusX DSA course and placement syllabus. The 
 | [Harvard Stat 110](https://stat110.hsites.harvard.edu/youtube) | Probability, conditional probability, expectation, and distributions. |
 | [MIT 18.065](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/) | Later, when you need deeper matrix methods. |
 | MIT RES.6-012 and MIT 18.650 | Use selectively for relevant math/statistics topics and your curriculum. |
+| [UCB CS70: Discrete Math and Probability Theory](https://csdiy.wiki/数学进阶/CS70/) | CSDIY; discrete math + probability with algorithmic applications. |
 
 Keep mathematics at approximately **two hours a week**. For your university's numerical problems, use resources aligned with your actual syllabus; advanced lectures are supplements, not replacements.
 
 **Math sequence by phase**
-- **Oct–Dec 2026:** Khan Academy and 3Blue1Brown for vectors, matrices, derivatives, and basic probability.
+- **Oct–Dec 2026:** Khan Academy and 3Blue1Brown for vectors, matrices, derivatives, and basic probability. CS70 for discrete math + probability.
 - **Jan–Mar 2027:** selected MIT 18.06 lectures plus statistics for model evaluation, distributions, sampling, and validation metrics.
 - **Apr–Jun 2027:** derivatives, chain rule, and gradients for backpropagation; practise by tracing gradients in a small neural network.
 - **Jul–Sep 2027:** Harvard Stat 110 topics on conditional probability and Bayes, aligned with CS50AI uncertainty.
@@ -397,6 +445,10 @@ Do not try to complete entire university courses just to satisfy this schedule. 
 | [pguso/rag-from-scratch](https://github.com/pguso/rag-from-scratch) | Build RAG step by step with no black boxes. |
 | [Karpathy — Let's reproduce GPT-2 (124M)](https://www.youtube.com/@AndrejKarpathy) | Advanced masterclass; watch last. |
 | [Kun Chen — L8 Principal Building a Full Stack App with Agentic Engineering](https://www.youtube.com/@KunChen) | Full-stack agentic app integration reference for Phase 6. |
+| [CS231n: CNN for Visual Recognition](https://csdiy.wiki/深度学习/CS231/) | CSDIY; companion for image-based Project 3. |
+| [CS224n: NLP with Deep Learning](https://csdiy.wiki/自然语言处理/CS224n/) | CSDIY; selected lectures for Phase 5. |
+| [CS336: Language Modeling from Scratch](https://csdiy.wiki/深度生成模型/roadmap/) | CSDIY; advanced LLM internals. |
+| [Full Stack Open](https://csdiy.wiki/Web开发/fullstackopen/) | CSDIY; React/Node.js for full-stack agent interface. |
 
 **DeepLearning.AI course decision:** keep the Deep Learning Specialization optional because it is primarily TensorFlow-based. Your main deep-learning implementation track remains **PyTorch**. Use short courses in the LLM phase only when they directly support the project you're building.
 
