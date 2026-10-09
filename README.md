@@ -189,7 +189,7 @@ Each phase has a goal, core resources, optional extras, a monthly checklist, and
 - [fast.ai](https://course.fast.ai/) — practical, project-first deep learning
 
 **Optional extras**
-- [Karpathy — Neural Networks: Zero to Hero](https://www.youtube.com/@AndrejKarpathy)
+- [Karpathy — Neural Networks: Zero to Hero](https://youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) — build networks by hand
 - Selected lectures from [MIT 6.S191](https://introtodeeplearning.com/)
 - [CS231n (Stanford)](https://csdiy.wiki/深度学习/CS231/) — ~80 h. Good if Project 3 is image-based.
 
