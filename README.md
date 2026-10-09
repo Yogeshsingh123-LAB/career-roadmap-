@@ -138,6 +138,7 @@ Each phase lists its goal, core resources, optional extras, and a monthly checkl
 - [CS50P](https://cs50.harvard.edu/python/) — finish Python foundations
 - [Andrew Ng's ML Specialization](https://www.deeplearning.ai/specializations/machine-learning/) — your main ML course
 - [scikit-learn Getting Started](https://scikit-learn.org/stable/getting_started.html)
+- [DSA for AI (Free Telegram channel)](https://t.me/DSAFORAI) — your one DSA course, starting now. Free resource shared via Telegram.
 
 **Optional extras (pick at most one or two)**
 - [Tech With Tim — Learn Python With This ONE Project!](https://www.youtube.com/@TechWithTim) — a guided first project
@@ -146,7 +147,7 @@ Each phase lists its goal, core resources, optional extras, and a monthly checkl
 - [UCB CS70: Discrete Math and Probability](https://csdiy.wiki/数学进阶/CS70/) — probability and discrete math with algorithmic applications (~60 h)
 
 **Monthly checklist**
-- [ ] **Oct 2026** — Finish CS50P. Start Ng's course. Clean up GitHub. Solve 20 SQL problems. Pick a small Python project.
+- [ ] **Oct 2026** — Finish CS50P. Start Ng's course. Clean up GitHub. Solve 20 SQL problems. Start DSA for AI (complexity analysis and the Python refresher). Pick a small Python project.
 - [ ] **Nov 2026** — Study regression, classification, and gradient descent. Practice NumPy and pandas. Start Project 1. Read two GSoC organization guides. Make one useful open-source interaction (an issue comment or question).
 - [ ] **Dec 2026** — **Finish Project 1** (see [Portfolio](#four-project-portfolio)). Reach 75 cumulative SQL problems. Protect exam time.
 
@@ -216,10 +217,10 @@ Each phase lists its goal, core resources, optional extras, and a monthly checkl
 
 **Core resources**
 - [Harvard CS50AI](https://cs50.harvard.edu/ai/) — **priority topics only:** search, knowledge representation, uncertainty, and optimization. Skip or skim ML and neural-network sections that duplicate Ng and PyTorch.
-- [CS61B: Data Structures and Algorithms (UC Berkeley)](https://csdiy.wiki/数据结构与算法/CS61B/) — structured DSA backbone (~60 h, Java, labs and projects)
+- [DSA for AI (Free Telegram channel)](https://t.me/DSAFORAI) — continue your DSA course: trees, graphs, heaps, and DP sections. Skip sections you've already finished.
 
 **Optional extras**
-- [MIT 6.006: Introduction to Algorithms](https://csdiy.wiki/数据结构与算法/6.006/) — Python-friendly alternative to CS61B
+- [MIT 6.006: Introduction to Algorithms](https://csdiy.wiki/数据结构与算法/6.006/) — Python-friendly algorithms course, for extra depth on graph and DP topics
 - [CS285: Deep Reinforcement Learning (UC Berkeley)](https://rail.eecs.berkeley.edu/deeprlcourse/) — only if you develop a specific RL interest. **Not required for target roles.**
 
 **Monthly checklist**
@@ -415,7 +416,7 @@ Links are references. Course versions and enrollment options may change, so chec
 | [PyTorch Tutorials](https://pytorch.org/tutorials/) | 3 | Main deep-learning implementation |
 | [fast.ai](https://course.fast.ai/) | 3 | Practical deep learning |
 | [Harvard CS50AI](https://cs50.harvard.edu/ai/) | 4 | Search, uncertainty, optimization (priority topics) |
-| [CS61B (CSDIY)](https://csdiy.wiki/数据结构与算法/CS61B/) | 4 | Structured DSA course |
+| [DSA for AI (Free Telegram)](https://t.me/DSAFORAI) | 1–6 | Primary DSA course in Python (free) |
 | [Hugging Face LLM Course](https://huggingface.co/learn/llm-course) | 5 | Transformers, tokenizers, and pretrained models |
 | [LangChain / LangGraph docs](https://docs.langchain.com/oss/python/learn) | 5–6 | RAG and agent tooling |
 | [pguso/rag-from-scratch](https://github.com/pguso/rag-from-scratch) | 5 | Build RAG step by step |
@@ -434,7 +435,7 @@ Links are references. Course versions and enrollment options may change, so chec
 
 **DSA rule:** Attempt each problem before reading a solution. After reading one, close it and rewrite it from memory. Track patterns and mistakes, not just the count.
 
-**DSA topic sequence (a guide, adjust to your CampusX DSA course)**
+**DSA topic sequence (a guide; adjust to the section order of your DSA course)**
 
 | Quarter | Topics |
 |---|---|
@@ -445,7 +446,7 @@ Links are references. Course versions and enrollment options may change, so chec
 | Q4 2027 | Mixed practice, sliding window, intervals, greedy, graphs, basic DP |
 | Q1 2028 | Timed mixed sets, weak-topic revision, interview-style explanations |
 
-**Choose one DSA course plus independent problem solving.** Use [CampusX DSA](https://www.youtube.com/watch?v=f9Aje_cN_CY) if that's your current course. Don't turn DSA into a playlist collection.
+**Choose one DSA course plus independent problem solving.** Your primary course is [DSA for AI (Free Telegram channel)](https://t.me/DSAFORAI), a Python, interview-oriented course. If you prefer not to use Telegram, use free practice instead: [NeetCode](https://neetcode.io/) and easy/medium problems on [LeetCode](https://leetcode.com/). Don't turn DSA into a playlist collection.
 
 ### Mathematics and statistics (~2 hours/week)
 
