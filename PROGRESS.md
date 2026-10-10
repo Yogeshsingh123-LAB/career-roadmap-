@@ -20,7 +20,7 @@ Update this file every Sunday during your 15-minute review. Check off items as y
 ### October 2026
 - [ ] Finish CS50P
 - [ ] Start Andrew Ng's ML Specialization
-- [ ] Clean up one GitHub repo (README, structure, requirements)
+- [x] Clean up one GitHub repo (README, structure, requirements)
 - [ ] Solve 20 SQL problems
 - [ ] Start DSA: complexity, arrays, hashing
 - [ ] Pick a small Python project
